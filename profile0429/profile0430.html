@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./profile0430.css" />
+    <script language="javascript">
+      function time() {
+        var time = new Date();
+        document.getElementById("now").innerHTML = time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
+        setInterval("time()", 1000);
+      }
+    </script>
+    <title>Profile210430</title>
+  </head>
+  <body onload="time()">
+    <img src="./source/ellipsis-h-solid.svg" alt="" />
+    <p>Company</p>
+    <img src="./source/wifi-solid.svg" alt="" />
+    <h2><span id="now"></span></h2>
+    <img src="./source/battery-three-quarters-solid.svg" alt="" />
+
+    <img src="./source/user-regular.svg" alt="" />
+    <img src="./source/" alt="">
+  </body>
+</html>
