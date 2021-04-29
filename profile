@@ -6,7 +6,7 @@
       <i class="fas fa-history"></i>
       <!--time refresh-->
       <i class="fas fa-cog"></i>
-      <!--setting-->
+      <!--setting-->d
     </p>
 
     <p>

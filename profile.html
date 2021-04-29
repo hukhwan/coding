@@ -4,7 +4,7 @@
     <title>Font Awesome Icons</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="./profile.css" />
+    <link rel="stylesheet" href="./profiletwo.css" />
     <script language="javascript">
       function time() {
         var time = new Date();
@@ -14,12 +14,13 @@
     </script>
   </head>
   <body onload="time()">
-    d
-    <!-- <header>
+    <header>
       <section>
-        <i class="fas fa-ellipsis-v"></i>
-        <p>Company</p>
-        <i class="fas fa-wifi"></i>
+        <div class="wifi">
+          <i class="fas fa-ellipsis-v" style="transform: rotate(90deg)"></i>
+          <p>Company</p>
+          <i class="fas fa-wifi"></i>
+        </div>
         <h2><span id="now"></span></h2>
         <i class="fas fa-battery-three-quarters"></i>
       </section>
@@ -32,48 +33,54 @@
     </header>
 
     <main>
-      <section>
-        <div class="box">
-          <img src="./source/capt.png" alt="" />
-          <div>grad</div>
+      <section class="profileInfo">
+        <div class="profileimg">
+          <div class="profileimgDiv"><img src="./source/capt.png" alt="" /></div>
         </div>
-
         <div>
-          <div>
-            <p>1.220</p>
-            <p>2.236</p>
-            <p>678</p>
+          <div class="profileContent">
+            <div>
+              <strong>1.220</strong>
+              <h2>post</h2>
+            </div>
+            <div>
+              <strong>2.236</strong>
+              <h2>followers</h2>
+            </div>
+            <div>
+              <strong>678</strong>
+              <h2>following</h2>
+            </div>
           </div>
 
-          <div>
-            <p>post</p>
-            <p>followers</p>
-            <p>following</p>
-          </div>
-
-          <div>
-            <button>Edit profile</button>
-            <button><i class="fas fa-cog"></i></button>
+          <div class="profileMessage">
+            <button class="profileButtonOne">Edit profile</button>
+            <button class="profileButtonTwo"><i class="fas fa-cog"></i></button>
           </div>
         </div>
       </section>
+
       <section>
         <p>T'ekaalok <br />What have you got for sale <br />Do you know you are a cat</p>
       </section>
+
       <section>
         <div>
-          <div>
-            <i class="fas fa-ellipsis-v"></i>
-            <i class="fas fa-ellipsis-v"></i>
-            <i class="fas fa-ellipsis-v"></i>
-          </div>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+        <div>
           <i class="fas fa-list"></i>
+        </div>
+        <div>
           <i class="far fa-id-card"></i>
+        </div>
+        <div>
           <i class="far fa-bookmark"></i>
         </div>
       </section>
+
       <section>
-        <img src="./source/11_IMG20210428_074110.png" />
+        <!-- <img src="./source/11_IMG20210428_074110.png" />
         <img src="./source/10_IMG20210428_074110.png" />
         <img src="./source/9_IMG20210428_074110.png" />
         <img src="./source/8_IMG20210428_074110.png" />
@@ -84,18 +91,20 @@
         <img src="./source/3_IMG20210428_074110.png" />
         <img src="./source/2_IMG20210428_074110.png" />
         <img src="./source/1_IMG20210428_074110.png" />
-        <img src="./source/0_IMG20210428_074110.png" />
+        <img src="./source/0_IMG20210428_074110.png" /> -->
       </section>
     </main>
 
     <footer>
-      <div>
-        <i class="fas fa-home"></i>
-        <i class="fas fa-search"></i>
-        <i class="far fa-plus-square"></i>
-        <i class="far fa-heart"></i>
-        <i class="far fa-user"></i>
-      </div>
-    </footer> -->
+      <section>
+        <div>
+          <i class="fas fa-home"></i>
+          <i class="fas fa-search"></i>
+          <i class="far fa-plus-square"></i>
+          <i class="far fa-heart"></i>
+          <i class="far fa-user"></i>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
