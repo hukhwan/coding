@@ -1,0 +1,7 @@
+.databoxone:active {
+  border-color: blue;
+}
+
+.databoxone {
+  border: red solid 5px;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dash.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="headLine">
+      <h1>Overview</h1>
+
+      <img src="./source/search.svg" alt="search icon" />
+      <img src="./source/dash alarm.svg" alt="alerm" />
+      <h2>T'ekaalok</h2>
+      <img src="./source/capt.png" alt="profile picture" />
+
+      <a href="https://www.figma.com/file/eJtYWFqNdjMLF5WbMDtVD8/Figma-Admin-Dashboard-UI-Kit-(Community)?node-id=0%3A1"
+        >Reference : click
+      </a>
+    </section>
+
+    <section class="databox">
+      <dl>
+        <div class="databoxone">
+          <dt>Unresolved</dt>
+          <dd>60</dd>
+        </div>
+
+        <div>
+          <dt>Overdue</dt>
+          <dd>16</dd>
+        </div>
+
+        <div>
+          <dt>Open</dt>
+          <dd>43</dd>
+        </div>
+
+        <div>
+          <dt>On hold</dt>
+          <dd>64</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="todayTrend">
+      <div class="graf">
+        <div>
+          <strong>Today's trends</strong>
+          <p>as of 31 April 2021, 05:10 AM</p>
+        </div>
+
+        <div>
+          <p><img src="./source/line.svg" /> Today</p>
+          <p><img src="./source/line.svg" />Yesterday</p>
+        </div>
+        <img src="./source/chart.png" />
+      </div>
+
+      <dl class="explain">
+        <div>
+          <dt>Resolved</dt>
+          <dd>449</dd>
+        </div>
+
+        <div>
+          <dt>Received</dt>
+          <dd>426</dd>
+        </div>
+
+        <div>
+          <dt>Average first response time</dt>
+          <dd>Average responese time</dd>
+        </div>
+
+        <div>
+          <dt>Resolution within SLA</dt>
+          <dd>94%</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="ticketTask">
+      <div class="unresolvedTickets">
+        <div>
+          <div>
+            <strong>Unresolved tickets</strong>
+            <a href="#">View details</a>
+          </div>
+          <div>
+            <p>Group</p>
+            <p>Support</p>
+          </div>
+        </div>
+
+        <div>
+          <ol>
+            <li>
+              <p>Contact Email not Linked</p>
+              <p>May 26, 2019</p>
+            </li>
+            <li>
+              <p>Adding Images to Featured Posts</p>
+              <p>May 26, 2019</p>
+            </li>
+            <li>
+              <p>When will I be charged this month?</p>
+              <p>May 26, 2019</p>
+            </li>
+            <li>
+              <p>Payment not going through</p>
+              <p>May 25, 2019</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="tasks">
+        <div>
+          <div>
+            <strong>Tasks</strong>
+            <a href="#">View all</a>
+          </div>
+          <p>Today</p>
+        </div>
+
+        <div>
+          <form action="">
+            <ol>
+              <li>
+                <label for="work"></label>
+                <input type="text" id="work" name="work" placeholder="Create new task" />
+                <input type="image" name="submit" src="./source/plus.svg" />
+              </li>
+
+              <li>
+                <label for="taskone"></label>
+                <input type="checkbox" id="taskone" />
+                <p>Finish ticket update</p>
+                <p>URGENT</p>
+              </li>
+
+              <li>
+                <label for="tasktwo"></label>
+                <input type="checkbox" id="tasktwo" />
+                <p>Create new ticket example</p>
+                <p>NEW</p>
+              </li>
+
+              <li>
+                <label for="taskthree"></label>
+                <input type="checkbox" id="taskthree" />
+                <p>Update ticket report</p>
+                <p>DEFAULT</p>
+              </li>
+            </ol>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
