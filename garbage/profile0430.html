@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./profile0430.css" />
+    <script language="javascript">
+      function time() {
+        var time = new Date();
+        document.getElementById("now").innerHTML = time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
+        setInterval("time()", 1000);
+      }
+    </script>
+    <title>Profile210430</title>
+  </head>
+
+  <body onload="time()">
+    <header>
+      <div class="firstLine">
+        <p class="wifi">
+          <img class="dot" src="./source/ellipsis-h-solid.svg" alt="" /> Company
+          <img src="./source/wifi-solid.svg" alt="" /><span id="now"></span>
+        </p>
+
+        <img class="battery" src="./source/battery-three-quarters-solid.svg" alt="battery image" />
+      </div>
+
+      <div class="secondLine">
+        <img src="./source/user-plus-solid.svg" alt="user image" />
+        <h1>username</h1>
+        <img src="./source/history-solid.svg" alt="history image" />
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <div class="profileImgRad">
+          <img class="profileImg" src="./source/capt.png" alt="profile" />
+        </div>
+        <div class="dlList">
+          <dl>
+            <div>
+              <dd>1,220</dd>
+              <dt>Posts</dt>
+            </div>
+
+            <div>
+              <dd>2,356</dd>
+              <dt>Followers</dt>
+            </div>
+
+            <div>
+              <dd>878</dd>
+              <dt>Followings</dt>
+            </div>
+          </dl>
+
+          <button>Edit profile</button>
+          <button><img src="./source/cogs-solid.svg" alt="cogs" /></button>
+        </div>
+      </div>
+
+      <p>T'ekaalok<br />What have you got for sale<br />Do you know you are a cat</p>
+
+      <div>
+        <div>
+          <img src="./source/ellipsis-v-solid.svg" alt="" />
+          <img src="./source/ellipsis-v-solid.svg" alt="" />
+          <img src="./source/ellipsis-v-solid.svg" alt="" />
+        </div>
+        <img src="./source/list-ul-solid.svg" alt="" />
+        <img src="./source/id-badge-regular.svg" alt="" />
+        <img src="./source/bookmark-regular.svg" alt="" />
+      </div>
+
+      <div>
+        <ol>
+          <li><img src="" alt="" /></li>
+          <li><img src="" alt="" /></li>
+          <li><img src="" alt="" /></li>
+          <li><img src="" alt="" /></li>
+          <li><img src="" alt="" /></li>
+          <li><img src="" alt="" /></li>
+          <li><img src="" alt="" /></li>
+          <li><img src="" alt="" /></li>
+          <li><img src="" alt="" /></li>
+          <li><img src="" alt="" /></li>
+          <li><img src="" alt="" /></li>
+          <li><img src="" alt="" /></li>
+        </ol>
+      </div>
+    </main>
+
+    <footer>
+      <img src="./source/home-solid.svg" alt="" />
+      <img src="./source/search-solid.svg" alt="" />
+      <img src="./source/plus-square-regular.svg" alt="" />
+      <img src="./source/heart-regular.svg" alt="" />
+      <img src="./source/user-regular.svg" alt="" />
+    </footer>
+  </body>
+</html>
