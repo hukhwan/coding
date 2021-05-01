@@ -1,3 +1,113 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+img,
+.buttonImg {
+  width: 16px;
+  opacity: 50%;
+}
+
+main {
+  padding: 36px 33px 30px 30px;
+  background-color: white;
+}
+
+/*navList open*/
+.sideList {
+  background-color: #31323a;
+  color: #a4a6b3;
+  font-size: 16px;
+  min-width: max-content;
+}
+d h3 {
+  padding-right: 43px;
+}
+
+li,
+.navhead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navhead {
+  margin: 37px 0 59px 32px;
+  font-size: 19px;
+}
+
+.navhead > img {
+  width: 25px;
+}
+
+.navList {
+  padding: 0;
+}
+
+.sideList img {
+  margin-right: 12px;
+}
+
+.navList li {
+  padding: 20.47px 0 20.47px 32px;
+}
+
+.activeList {
+  border-left: #dde2ff solid 3px;
+  background-color: #9fa2b4;
+  opacity: 80%;
+  color: white;
+}
+
+.navList > .navListEnd {
+  padding-bottom: 36px;
+}
+
+.navList > .navSetting {
+  border-top: #646570 solid 1px;
+  padding-top: 36px;
+}
+/*navList end*/
+
+.headLine {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profileImg {
+  opacity: 100;
+  width: 44px;
+  height: 44px;
+  border: rgb(180, 181, 255) solid 3px;
+  border-radius: 50%;
+}
+
+.headLine h1 {
+  margin-right: 64px;
+}
+
+.headLineProfile img {
+  margin-right: 30px;
+}
+
+.headLineProfile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.headLineProfile h2 {
+  margin-right: 14px;
+}
+
 .databoxone:active {
   border-color: blue;
 }
