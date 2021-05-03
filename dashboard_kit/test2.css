@@ -1,0 +1,51 @@
+body {
+  font-family: Consolas, monospace;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+.transbody {
+  position: relative;
+}
+
+.transImg {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  background-color: none;
+  transition-duration: 1s;
+}
+
+.tr {
+  position: absolute;
+  transition-duration: 1s;
+  top: 225px;
+  left: 225px;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  background-color: white;
+}
+
+input:hover ~ .transImg {
+  top: 180px;
+}
+
+input:hover ~ .tr {
+  top: 205px;
+  background-color: rgb(167, 255, 167);
+}
+
+.transImg1 {
+  transition-property: all;
+}
+
+/*https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Animations/Using_CSS_animations*/
+
+.imgtr {
+  animation: un-and-down 1.5s infinite alternate;
+  animation-name: up-and-down;
+}
