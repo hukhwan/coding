@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#popup_open_btn {
+  border: 0;
+  outline: 0;
+  background-color: white;
+}
+
+#my_modal {
+  text-align: center;
+  display: none;
+  width: 600px;
+  padding: 30px 40px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 10px;
+}
+
+#my_modal .modal_close_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.modal_close_btn {
+  margin: 5px 10px 0 0;
+}
+
+#my_modal > h3 {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+#my_modal img {
+  margin-bottom: 10px;
+}
+
+#my_modal ol {
+  margin-left: 50px;
+}
+
+#my_modal li {
+  font-size: 12px;
+  text-align: left;
+  font-weight: 700;
+}
+
+#my_modal p {
+  font-size: 8px;
+  margin: 20px 0 10px;
+}

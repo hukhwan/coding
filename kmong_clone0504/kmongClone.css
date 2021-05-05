@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 0;
+  word-break: break-all;
+}
+
+.headerImgL {
+  position: absolute;
+  background-image: url("https://kmong.com/img/main/desktop/img_header_left@2x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 558px;
+  height: 351px;
+}
+
+.headerImgR {
+  position: absolute;
+  background-image: url("https://kmong.com/img/main/desktop/img_header_right@2x.png");
+  background-repeat: no-repeat;
+  width: 558px;
+  height: 351px;
+  background-size: contain;
+}
