@@ -1,8 +1,783 @@
+/*주기능 hover*/
+/*??Q?? 관리자모드 toggle device toolbar로 확인하면 화면이
+왼쪽으로 치우쳐짐; 왜지*/
 body {
   box-sizing: border-box;
   font-family: sans-serif;
-  font-weight: bold;
-  letter-spacing: 0;
+  font-weight: 900;
+  letter-spacing: -2px;
   word-break: break-all;
-  word-spacing: -3px;
+  font-size: 14px;
+  color: #1c1f25;
 }
+
+header {
+  background: linear-gradient(to bottom, #fff080, #ffd400);
+  opacity: 0.7;
+  height: 568px;
+}
+
+section {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+.firstBord {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 45px;
+  border-bottom: rgb(206, 206, 206) solid 1px;
+  opacity: 0.6; /*Q*/
+}
+
+h1 {
+  font-size: 44px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  letter-spacing: -3px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1c1f25;
+}
+
+/* head open */
+
+.firstLine {
+  font-size: 12px;
+  color: rgb(131, 131, 131);
+}
+
+.firstLine ul {
+  padding-left: 0;
+}
+
+.firstLine a:hover {
+  color: blue;
+}
+
+.list {
+  position: relative;
+}
+
+.balloon {
+  position: absolute;
+  top: -10px;
+  left: -40px;
+  margin: 50px;
+  width: 200px;
+  background: rgb(197, 197, 197);
+  border-radius: 10px;
+  font-size: 10px;
+  transition-duration: 0;
+  opacity: 0%;
+  text-align: center;
+  padding: 15px 5px;
+  font-size: 14px;
+}
+.balloon:after {
+  border-top: 0px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgb(255, 255, 255);
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 20px;
+}
+
+.business:hover {
+  cursor: pointer;
+  color: rgb(30, 71, 255);
+}
+
+.business:hover ~ .balloon {
+  opacity: 100%;
+  background-color: white;
+}
+
+.balloon1 {
+  transition-property: opacity, background-color;
+}
+
+.secondLine {
+  position: relative;
+}
+
+.secondLine li {
+  margin-left: 25px;
+}
+
+.secondLine button {
+  padding: 12px 15px;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  background-color: #116ad4;
+}
+
+.secondLine button:hover {
+  background-color: #144d92;
+}
+
+.commentBox {
+  position: absolute;
+  right: -30px;
+  top: 75px;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px rgb(0 0 0 / 12%);
+}
+
+.commentBox::after {
+  border-top: 0px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 80px;
+}
+
+.mainLogo {
+  width: 92px;
+}
+
+.prime {
+  color: rgb(255, 145, 0);
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+}
+
+/*headerDeco img List open*/
+
+.headerDeco {
+  position: relative;
+}
+
+.headerDecoL,
+.headerDecoR {
+  position: absolute;
+  top: 20px;
+}
+
+.headerDecoL > img,
+.headerDecoR > img {
+  width: 558px;
+  height: 351px;
+}
+
+.DecoImg > img {
+  position: absolute;
+  width: 40px;
+}
+
+.imgLOne {
+  top: 220px;
+  left: -20px;
+}
+
+.imgLTwo {
+  top: 200px;
+  left: 180px;
+}
+
+.imgLThree {
+  top: 50px;
+  left: 270px;
+}
+
+.imgLFour {
+  top: 0px;
+  left: 320px;
+}
+
+.imgLFive {
+  top: 160px;
+  right: 30px;
+}
+
+.imgROne {
+  top: 110px;
+}
+
+.imgRTwo {
+  top: 200px;
+  left: 260px;
+}
+
+.imgRThree {
+  top: 230px;
+  left: 330px;
+}
+
+.imgRFour {
+  top: 80px;
+  right: 60px;
+}
+
+.imgRFive {
+  top: 140px;
+  right: -20px;
+}
+
+.headerDecoL {
+  left: -300px;
+}
+
+.headerDecoR {
+  right: -350px;
+}
+
+/*headerDeco img List close*/
+
+.headerSearch {
+  display: block;
+  text-align: center;
+}
+
+.headerSearch p {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.searchBox {
+  background-color: white;
+  height: 70px;
+  width: 650px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.searchBox input,
+.searchBox button {
+  border-style: none;
+  background-color: white;
+  margin: 0 25px;
+}
+
+.searchBox input {
+  width: 100%;
+  height: 100%;
+  font-size: 26px;
+  opacity: 0.5;
+}
+
+.searchBox i {
+  font-size: 35px;
+  opacity: 0.7;
+}
+
+.searchBoxContent {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchBoxContent i {
+  cursor: pointer;
+}
+
+.hsOr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.underLine {
+  position: relative;
+}
+
+.underLine::after {
+  position: absolute;
+  content: "";
+  display: block;
+  border-bottom: 1px solid #000000;
+  transition: width 250ms ease-out;
+  left: auto;
+  right: 0;
+  width: 0;
+}
+.underLine:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+.whiteLine {
+  height: 1px;
+  width: 30px;
+  border-bottom: white solid 1px;
+  margin: 0 10px;
+}
+/* head close */
+
+/* Main open */
+
+.mainCategoriLine {
+  position: relative;
+}
+
+.mainCategori {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: -80px;
+  background-color: white;
+  margin: 5px 0;
+  border-radius: 80px 80px 0 0;
+}
+
+.mainCategori img {
+  width: 45px;
+}
+
+.mainCategori p {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.mainCategori > a > div > img {
+  margin: 30px 0 0 0;
+}
+
+.mainCategori > a > div > img:hover {
+  margin-top: 0px;
+  transition-duration: 0.3s;
+  background-color: gold;
+}
+
+.mCateImgFirst {
+  margin-left: 70px;
+}
+.mCateImgLast {
+  margin-right: 70px;
+}
+
+.categoriListOne {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.categoriListOne button:hover,
+.categoriList button:hover {
+  background-color: #ffd446;
+  transition-duration: 0.3s;
+  border-color: #ffbb00;
+}
+
+.categoriList {
+  display: flex;
+  flex-direction: column;
+}
+
+.categoriHead,
+.categoriItem {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categoriHead {
+  margin-bottom: 5px;
+}
+
+.categoriHead button {
+  margin-right: -5px;
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-style: none;
+  border: rgb(158, 158, 158) solid 1px;
+}
+
+.categoriHead i {
+  color: rgb(122, 122, 122);
+}
+
+.categoriItem {
+  margin-bottom: 60px;
+}
+
+.categoriItem img {
+  width: 222px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.itemBlock {
+  position: relative;
+}
+
+.itemBlock p {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  letter-spacing: -1px;
+}
+
+.itemBlock img {
+  filter: brightness(1);
+  opacity: 0.9;
+}
+
+.itemBlock img:hover {
+  filter: brightness(0.6);
+  transition-duration: 0.6s;
+}
+.itemBlock img:hover ~ .itblp {
+  color: #ffbb00;
+}
+.itblp2 {
+  transition-property: color;
+}
+
+.ranking {
+  width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.rankingheader {
+  text-align: left;
+  font-size: 18px;
+}
+
+.rankingheader > p {
+  font-size: 15px;
+  color: rgb(177, 177, 177);
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+.rankingCategori {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rankingCategori > div {
+  width: 378px;
+  background-color: #f3f4f8;
+  cursor: pointer;
+  border: white solid 1px;
+}
+
+.rankingCategori > div:hover {
+  background-color: #ffe96f;
+  border-color: #ffbc2b;
+  transition-duration: 0.5s;
+}
+
+.rankingCategori img {
+  width: 77px;
+  height: 111px;
+}
+
+.rankFirstCate {
+  margin: 30px 30px 0 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: left;
+}
+
+.rankFrExplain {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rankFrExplain > p {
+  font-size: 13px;
+  color: rgb(153, 153, 153);
+  margin: 0 0 5px 0;
+}
+
+.rankFrExplain > strong {
+  font-size: 22px;
+  letter-spacing: 0.3px;
+  margin-bottom: 10px;
+}
+
+.rankFrExplain a {
+  width: fit-content;
+  text-align: center;
+  font-size: 11px;
+  color: rgb(153, 153, 153);
+  padding: 2px 15px;
+  border: rgb(153, 153, 153) solid 1px;
+  border-radius: 20px;
+}
+
+.rankingCategori {
+  margin-bottom: 70px;
+}
+
+.rankingCategori ol {
+  padding: 0;
+  margin: 0;
+}
+
+.rankingCategori li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-bottom: rgb(211, 211, 211) solid 1px;
+  padding: 5px 25px;
+  letter-spacing: 0.3px;
+}
+
+.rankingCategori li:last-child {
+  border-bottom-color: white;
+}
+
+.rankingCategori li > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rankingCategori li p {
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+  padding-right: 15px;
+}
+
+.rankingCategori li strong {
+  font-size: 16px;
+}
+
+.rankingCategori li a {
+  font-size: 13px;
+  color: rgb(153, 153, 153);
+}
+
+.midBanner {
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+
+.midBanner img {
+  width: 100%;
+}
+
+/* Main close */
+
+/* Footer open */
+
+.footblock {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-bottom: 30px;
+}
+
+.footblock strong {
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.footblock ol,
+.footblock ul {
+  padding-left: 0;
+}
+
+.footblock ol {
+  margin-bottom: 60px;
+}
+
+.footblock li {
+  margin-bottom: 5px;
+}
+
+.footblock dd {
+  margin-left: 0;
+}
+
+.footblock img {
+  display: block;
+  margin-bottom: 10px;
+  width: 156px;
+  height: 41px;
+}
+
+.footTwoSection {
+  display: flex;
+  flex-direction: row;
+}
+
+.footTwoSection > div {
+  width: 140px;
+  margin-left: 40px;
+}
+
+.footblock button {
+  border-style: none;
+  background-color: white;
+  border: rgb(192, 192, 192) solid 1px;
+  border-radius: 5px;
+}
+
+.slash {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: rgb(212, 212, 212) solid 1px;
+}
+
+/*modal*/
+#popup_open_btn {
+  border: 0;
+  outline: 0;
+  background-color: white;
+  margin-bottom: 30px;
+}
+
+#popup_open_btn address:hover {
+  cursor: pointer;
+  color: #116ad4;
+}
+
+#my_modal {
+  text-align: center;
+  display: none;
+  width: 900px;
+  padding: 50px 60px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 10px;
+}
+
+#my_modal .modal_close_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.modal_close_btn {
+  margin: 5px 10px 0 0;
+}
+
+#my_modal > h3 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+#my_modal img {
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+#my_modal ol {
+  margin-left: 50px;
+}
+
+#my_modal li {
+  font-size: 25px;
+  text-align: left;
+  font-weight: 700;
+  letter-spacing: 0;
+  font-weight: 300;
+}
+
+#my_modal p {
+  font-size: 18px;
+  margin: 20px 0 10px;
+}
+/*modal*/
+
+.lastBord {
+  margin: 0;
+  position: absolute;
+  top: 2610px;
+  width: 100%;
+  height: 101px;
+  border-top: rgb(131, 131, 131) solid 2px;
+  opacity: 0.6; /*Q*/
+}
+
+.lastBord2 {
+  margin: 0;
+  position: absolute;
+  top: 3000px;
+  width: 100%;
+  height: 101px;
+  border-top: rgb(202, 202, 202) solid 1px;
+  opacity: 0.6; /*Q*/
+}
+
+.help {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 13px 22px;
+  background-color: rgb(255, 219, 60);
+  border-radius: 30px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.help:hover {
+  background-color: #ffbb00;
+}
+
+.help i {
+  padding-right: 10px;
+  font-size: 18px;
+}
+.help i,
+.help p {
+  margin: 0;
+}
+/* Footer close */
