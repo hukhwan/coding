@@ -24,7 +24,7 @@ body {
 
 .previewImg {
   position: relative;
-  height: 100%;
+  width: 100%;
 }
 
 .previewImg > img {
@@ -42,7 +42,7 @@ body {
 }
 
 .cardExplain {
-  margin: 71px 95px 59px 72px;
+  margin: 71px 75px 0 72px;
 }
 
 .cardExplain h1 {
