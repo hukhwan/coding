@@ -1,0 +1,19 @@
+.chapter {
+}
+
+.chapterShape {
+  width: 56px;
+  height: 56px;
+  border: rgba(135, 135, 157, 0.25) solid 1px;
+  border-radius: 29px;
+  background-color: #fafafa;
+  font-weight: 700;
+  padding: 15px 17px;
+}
+
+.chapterBar {
+  width: 1px;
+  height: 84px;
+  border: #87879d solid 1px;
+  opacity: 0.25;
+}

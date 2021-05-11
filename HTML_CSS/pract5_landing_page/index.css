@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  width: 1440px;
+  color: #87879d;
+  line-height: 26px;
+  font-size: 16px;
+}
+
+main,
+footer {
+  position: relative;
+  display: block;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 900;
+  color: #28283d;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 900;
+  color: #28283d;
+}
+
+h3 {
+  font-weight: 900;
+  color: #4d96a9;
+}
+
+p {
+  font-size: 18px;
+}
+
+.chapterOne {
+}
+
+.chapterTwo {
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.chapterShape {
+  width: 56px;
+  height: 56px;
+  border: rgba(135, 135, 157, 0.25) solid 1px;
+  border-radius: 29px;
+  background-color: #fafafa;
+  font-weight: 700;
+  padding: 15px 17px;
+}
+
+.chapterBar {
+  width: 1px;
+  height: 84px;
+  border: #87879d solid 1px;
+  opacity: 0.25;
+}
+
+.buttonOne {
+  padding: 16px 29px;
+  border-radius: 29px;
+  background-color: #4d96a9;
+  color: white;
+}
+
+.buttonTwo > span {
+  color: #8fe3f9;
+}
+
+.buttonOne:hover {
+  background-color: #71c0d4;
+}
+
+.buttonTwo {
+  padding: 16px 29px;
+  border-radius: 29px;
+  background-color: #855fb1;
+  color: white;
+}
+
+.buttonTwo > span {
+  color: #d9b8ff;
+}
+
+.buttonTwo:hover {
+  background-color: #b18bdd;
+}
