@@ -1,0 +1,261 @@
+<!-- 웹 접근성 : 웹사이트에서 제공하는 정보를 차별/제한없이 동등하게 이용할수 있도록 보장
+	- 장애인 및 고령자 등을 포함한 모든사람.
+	- 다양한 플랫폼 및 장치, 웹브라우저등의 모든 환경.
+
+aria-required > true로 설정하여 스크린리더사용자에게 해당요소가 필수입력사항임을 전달
+<input type="" aria-required="true">
+
+aria-describedby > 추가설명기입 ex)아이디를 8글자 이상 입력하세요.
+
+aria-label > 간단한 명사로 해당 요소 기능의 이해를 돕는다.
+//
+Aria 사용규칙
+	1. 태그요소와 중복사용 X    >   ex) <nav role="navigation"> ( X ) 네이티브요소와 중복마크업
+	2. naitve요소의 의미, 기능변경 X  >  <h1 role="button"> ( X )
+
+table 웹 접근성
+레이아웃용 사용금지. only 표
+<caption> - 표 설명/제목
+
+<thead><tbody> - 행그룹 지정태그
+
+scope 
+
+colspan / rowspan 셀병합 속성. 병합되는 요소의 영역은 비워줘야함. 
+
+head tag------------------------------------------------------------------------------------------------------------------------
+<base> -> 전체의 기준 URL 문서에는 하나의 base요소만 존재.
+ex)   <base href="https://google.com" target="_blank" />
+    </head>
+    <body>
+      <a href="./test"></a>    ->baes를 놓으면 이렇게 작성하면된다.
+
+<meta> -> 다른요소로 나타낼수없는 메타데이터 지칭.
+content > http-equiv, name attr값을 포함
+http-equiv > content-security-policy -현재 페이지 콘텐츠정책 정의
+                  서버출처, 스크립트엔드포인트지정 사이트간 스크립트 공격방어 용도
+              > refresh - content에 정수값 설정시 페이지 다시불러오기까지 초단위 대기시간
+                          - '' 값 설정, 그뒤에 문자열 ;url=url를 입력하면 url로 이동까지 대기시간
+name > attr 전체 페이지에 적용되는 문서레벨 메타데이터
+name과 content attr를 같이 사용하면 meta를 name,value로 제공할 수 있다.
+//meta는 예시 참고
+----------
+body tag
+-----------------------------------------------------------------------------------------------------
+-----------콘텐츠 구획 tag-------------------------------------------------------------------------
+<address> 사람,단체,조직등 연락처정보  //ex) 대표 전화 : 010-0000-0000
+                                                                   이메일 : sdfdsfsdf@gmail.com
+<article> 사이트안에서 독립구분 배포하거나 재사용할수 있는구획
+            사용 예제로 게시판과 블로그 글, 매거진이나 뉴스 기사
+• 각각의 <article>을 식별할 수단이 필요합니다. 주로 제목(<h1>-<h6>) 요소를 <article>의 자식으로 포함하는 방법을 사용합니다.
+• <article> 요소가 중첩되어 있을 때, 안쪽에 있는 요소는 바깥쪽에 있는 요소와 관련된 글을 나타냅니다. 예를 들어 블로그 글의 댓글은, 글을 나타내는 <article> 요소 안에 중첩한 <article>로 나타낼 수 있습니다.
+• <article> 요소의 작성자 정보를 <address> 요소를 이용하여 제공할 수 있습니다. 그러나 중첩 <article>에는 적용되지 않습니다.
+• <article> 요소의 작성일자와 시간은 <time> 요소의 datetime 속성을 이용하여 설명할 수 있습니다. 참고로 <time> 요소의 pubdate 속성은 더 이상 W3C (en-US) HTML5 (en-US) 표준안에 포함되지 않습니다.
+<article class="film_review">
+  <header>
+    <h2>Jurassic Park</h2>
+  </header>
+  <section class="main_review">
+    <p>Dinos were great!</p>
+  </section>
+  <section class="user_reviews">
+    <article class="user_review">
+      <p>Way too scary for me.</p>
+      <footer>
+        <p>
+          Posted on <time datetime="2015-05-16 19:00">May 16</time> by Lisa.
+        </p>
+      </footer>
+    </article>
+    <article class="user_review">
+      <p>I agree, dinos are my favorite.</p>
+      <footer>
+        <p>
+          Posted on <time datetime="2015-05-17 19:00">May 17</time> by Tom.
+        </p>
+      </footer>
+    </article>
+  </section>
+  <footer>
+    <p>
+      Posted on <time datetime="2015-05-15 19:00">May 15</time> by Staff.
+    </p>
+  </footer>
+</article>
+
+<aside> - 문서 주내용과 간접적으로 연관된 부분. 사이드바 or 콜아웃박스
+<footer> - 일반적으로 작성자,저작권정보, 관련문서등 표현
+<header> - 소개및 탐색에 도움을 주는 컨텐츠. 제목, 로고, 검색폼, 작성자이름등도 포함
+<nav> 현재페이지내, or 다른페이지로의 링크를 보여주는 구획 / 메뉴 목차 색인등
+<section> 독립적인 구획. 더 적합한 의미가 없을때 사용.
+
+<main> X explore 미지원
+
+
+------------------------------------------------------------------------------------------------
+텍스트 content
+<blockquote> 인용문 삽입에 사용. / cite attr는 해당 인용문 url삽입에 사용
+ex) <blockquote cite="https://a.com/bb/ccc">
+       <p>blah<p>
+     </blockquote>
+<q> 짜ᇓ은 인용문
+
+<div>통용 컨테이너. css로 꾸미기 전엔 어떤 영향도 주지 않는다.
+
+<dl> <dt> <dd> 정의목록.
+
+<figure> 독립적인 content 표현.
+  - 용도구획 : 이미지, 코드조각, 인용문, 시 등등 (간략한 설명은 figcation으로 표현.
+     나머지 content는 figure밖에 작성)
+<figcaption> - 부모 figure요소가 포함하는 다른 컨텐츠의 설명, 범례를 나타냄.
+
+<p>하나의 문단.
+
+<ol>,<ul>  <li> - ol 순서있는 ul 순서없는 li 리스트
+
+<pre> 서식지정 텍스트 html 작성한 내용 그대로 표현.
+
+<hr> 구획내 주제변경등 문단레벨오서에서 주제의 분리를 나타냄. (잘쓰는지는..)
+
+------------------------------------------------------------------------------------------------
+
+인라인 텍스트 smentic
+<a> 앵커 
+  - attr : href >하이퍼링크가 가리키는 url
+           download > 유저에게 URL을 저장할지 물어봄. 링크로 이동하는 대신  다운로드진행
+
+<a href=""><p>abc</p></a> XXXX
+<p><a href=""></a></p>  => O
+
+<abbr> - hover시 나오는 머리말.
+  ex) <p> a bb ccc dddd <abbr title="repeat e">eeeee</abbr> ffffff </p>
+  접근성 > 준말과 머리글자가 처음 사용될때, 풀어설명하면 독자가 문서를 이해하기 쉬워짐.
+               전문용어일수록 더욱 그렇다.
+  <p>JavaScript Object Notation(<abbr>JSON</abbr>)은 경량의 데이터 교환형식이다.</p>
+
+<br> 줄바꾸기 남용X
+
+<data> explore 미지원  //
+
+<b> / <em> 강조(굵게/기울임)
+
+<i> 텍스트상 주위와 구분해야하는 부분.
+
+<s> 취소선. 글자 가로지르는 선
+
+<span>인라인 div
+
+<strong>강한 강조
+
+<sub>아래첨자
+<sup>위첨자
+
+<time> explore 미지원   //시간 특정지점or구간
+------------------------------------------------------
+
+html form
+<form> -정보를 제출하기위한 대화형 컨트롤을 포함하는 문서 구획
+    <form action="" method="get">
+      <div>
+        <label for="name">Enter your name : </label>
+        <input type="text" name="names" id="name" required />
+      </div>
+      <div>
+        <label for="email">Enter your email : </label>
+        <input type="email" name="mail" id="email" required />
+      </div>
+      <div>
+        <input type="submit" value="Submit" />
+      </div>
+    </form> 표현예시
+form attr
+action 양식데이터를 처리할 프로그램의 URL
+method 양식을 제출할때 사용할 http 메서드
+  - post : 양식 데이터를 요청 본문으로 전송합니다.
+  - get : 양식 데이터를 action URL과 ? 구분자 뒤에 이어붙여 전송.
+name : 사용중단 id를 사용할것!
+target : _self 현재 브라우징맥락적용 / _blank 새로운 브라우징맥락
+
+
+<input> - 사용자의 데이터를 받을 수 있는 대화형 컨트롤 생성.
+type attr
+type="button" > action을 가지지 않으며 value를 레이블로 사용하는 푸시버튼
+  굳이..? <button></button>쓰고말지
+
+type="checkbox" > 단일값을 선택하거나 선택 해제할 수 있는 체크박스
+
+type="email" > 이메일주소입력필드
+
+type="file" > 파일 import할수있는 컨트롤. 
+  - accept attr로 허용하는 파일 이름 지정 가능.
+
+type="hidden" > 보이지 않지만 값은 서버로 전송하는 컨트롤
+
+type="image" > src에 지정한 이미지로 나타나는 시각적 제출버튼
+
+type="number" > 숫자를 입력하기 위한 컨트롤
+
+type="password" > 값이 가려진 한줄 텍스트 필드
+
+type="radio" > 같은 name값을 가진 여러개의 선택중에 하나의 값을 선택하게 하는 버튼
+
+type="range" > 값이 가려진 숫자를 입력하는 컨트롤 ᅟ
+  - min="", max=""설정필요 default값 중간값.
+
+type="search" > 검색 문자열을 입력하는 한줄 텍스트 필드.
+  - 줄바꿈 문자는 입력값에서 자동제거됨.
+
+type="submit" > 양식전송버튼
+
+type="tel" > 전화번호입력
+
+type="text" > 한줄의 텍스트 필드.
+
+type="url" > url입력필드
+
+type="reset" > 리셋버튼(권장되지 않음.)
+
+type="time"
+type="week"
+type="month" > explore 미지원
+type="date" > explore 미지원  //연월일 지정컨트롤 달력열어줌.
+type="datetime-local" > explore 미지원 //
+type="color" > explore 미지원  //색상선택기 컨트롤 
+
+all input attr
+accept	 파일을 업로드할때 파일유형을 기재
+alt	 접근성 측면을 고려한 이미지 유형의 대체속성.
+autocomplete	 양식 자동생성 기능
+autofocus	 페이지가 로딩될때 양식 제어에 오토포커스
+capture	 파일 업로드 제어에서 input방식에서 미디어 capture
+checked	 커맨드나 컨트롤이 체크되었는지의 여부
+dirname	 양식전송시 요소의 방향성
+disabled	 비활성화여부
+form	 컨트롤을 양식요소와 연결
+formenctype	 양식의 데이터 인코딩 유형이 양식 전송시 사용될 것.
+등등
+
+<label>
+
+<select>
+
+<option>
+
+<optgroup>
+
+<button>
+
+<progress> 
+
+<datalist>
+
+<fieldset>
+
+<legend>
+
+
+<output> explore 미지원   //  
+<meter>  explore 미지원   // 특정범위 내에서의 백분율 / 스탈라값
+
+
+ -->
