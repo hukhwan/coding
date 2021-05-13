@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -11,8 +12,23 @@ body {
   text-align: center;
 }
 
+.main {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
 .imgCenter {
   display: none;
+}
+
+.imgL {
+  margin-left: -32px;
+}
+
+.imgR {
+  overflow: hidden;
+  margin-right: -32px;
 }
 
 .logo {
@@ -34,6 +50,7 @@ body {
 }
 
 .maineExplain {
+  color: #87879d;
   margin: auto;
   margin-bottom: 32px;
   width: 540px;
@@ -55,11 +72,17 @@ body {
 
 .marketingImg {
   margin-bottom: 80px;
+  font-size: 0;
 }
 
-.marketingImg > img {
+.markImgGrp {
+  font-size: 0;
+  display: inline-block;
+}
+
+.marketingImg img {
+  border-radius: 10px;
   width: 255px;
-  height: 242px;
   margin-right: 13px;
   margin-left: 13px;
 }
@@ -71,12 +94,14 @@ body {
 }
 
 .summery {
+  color: #87879d;
   margin: auto;
   margin-bottom: 184px;
   width: 540px;
 }
 
 .foot {
+  position: relative;
   bottom: 0;
 }
 
@@ -89,24 +114,26 @@ body {
 
 .imgCover {
   width: 100%;
-  height: 308px;
   background-image: url(./assets/desktop/image-footer.jpg);
 }
 
 .footh3 {
-  margin-right: 125px;
   color: white;
   width: 350px;
 }
 
 .BannerText {
+  padding: 0 165px;
+  height: 308px;
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
   color: white;
-  height: 100%;
   background: rgba(41, 146, 165, 0.85);
 }
 
 .bannerSummery {
-  margin-right: 92px;
   font-weight: 500;
   width: 350px;
 }
@@ -146,6 +173,7 @@ body {
 
 /* -------button style-------- */
 .buton {
+  margin: 8px;
   padding: 16px 29px;
   border-radius: 29px;
   color: white;
@@ -177,53 +205,141 @@ body {
 }
 /*  -----button style end-- --- */
 
-/* flex row */
+/* flex */
 .flexRo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* flex row end */
 
-/* @media screen and (max-width: 375px) {
+/* flex end */
+
+@media screen and (max-width: 1200px) {
   body {
-    max-width: 375px;
+    width: 100%;
   }
 
-  .mainImg {
+  .logo {
+    margin: 48px 0 64px;
+  }
+
+  .main {
+    margin-left: 24px;
+    margin-right: 24px;
     display: block;
   }
 
-  .L {
-    top: 130px;
-    max-width: 414px;
-    height: 153px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url("./assets/tablet/image-hero.png");
+  .BannerText {
+    flex-direction: column;
+    padding: 0;
+    height: 428px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background: rgba(41, 146, 165, 0.85);
   }
 
-  .R {
-    background-image: none;
+  .imgCenter {
+    max-width: 770px;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+
+  .imgL,
+  .imgR {
+    display: none;
+  }
+
+  .marketingImg img {
+    width: 164px;
+    margin: 5px;
+  }
+
+  .chapterTwo {
+    top: -25%;
   }
 
   .imgCover {
     width: 100%;
-    height: 375px;
-    background-image: url(./assets/mobile/image-footer.jpg);
+    height: 428px;
+    background-image: url("./assets/tablet/image-footer.jpg");
   }
 
-  .logo {
-    margin: 48px 0 255px;
-    width: 100px;
+  .mainComment,
+  .maineExplain,
+  .mainh3,
+  .summery,
+  .footh3,
+  .bannerSummery {
+    width: 100%;
   }
 
-  .flexRo {
-    flex-direction: column;
+  .mainComment {
+    margin-top: 72px;
+    max-width: 339px;
+    font-size: 48px;
   }
 
-  .marketingImg > img {
-    max-width: 151px;
-    height: 143px;
+  .maineExplain {
+    max-width: 457px;
+    font-size: 16px;
   }
-} */
+
+  .mainh3 {
+    font-size: 40px;
+    max-width: 445px;
+  }
+
+  .summery {
+    font-size: 16px;
+    max-width: 573px;
+  }
+
+  .footh3 {
+    max-width: 457px;
+  }
+
+  .bannerSummery {
+    max-width: 573px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    width: 375px;
+  }
+
+  .mainComment {
+    max-width: 327px;
+    font-size: 40px;
+  }
+
+  .maineExplain {
+    max-width: 327px;
+  }
+
+  .mainh3 {
+    font-size: 32px;
+    max-width: 327px;
+  }
+
+  .summery {
+    max-width: 327px;
+  }
+
+  .footh3 {
+    max-width: 327px;
+  }
+
+  .bannerSummery {
+    max-width: 327px;
+  }
+
+  .mainButon > button {
+    display: block;
+    margin: auto;
+    margin-bottom: 16px;
+  }
+}
