@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 800px;
+  color: white;
+}
+
+.headOne {
+  margin-top: 35px;
+  margin-bottom: 25px;
+  font-size: 40px;
+  font-family: "Big Shoulders Display", cursive;
+  line-height: 47.88px;
+}
+
+.explain {
+  margin-bottom: 83px;
+  font-size: 15px;
+  max-width: 212px;
+  line-height: 25px;
+  opacity: 75%;
+}
+
+.cardComponent {
+  max-width: 921px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.allCard {
+  position: relative;
+  width: 921px;
+  background-color: #e28625;
+  border-radius: 8px;
+}
+
+.secThdCard {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 614px;
+  background-color: #006971;
+  border-radius: 8px;
+}
+
+.thardCard {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 307px;
+  background-color: #004140;
+  border-radius: 8px;
+}
+
+.card {
+  padding: 48px;
+}
+
+.hoverButton {
+  padding: 11.5px 31.5px;
+  border-radius: 25px;
+  font-size: 15px;
+  border: white solid 2px;
+  line-height: 25px;
+}
+
+.btn1 {
+  background-color: white;
+  color: #e28625;
+}
+
+.btn2 {
+  background-color: white;
+  color: #006971;
+}
+
+.btn3 {
+  background-color: white;
+  color: #004140;
+}
+
+.btn1:hover {
+  background-color: #e28625;
+  border: white solid 2px;
+  color: white;
+}
+
+.btn2:hover {
+  background-color: #006971;
+  border: white solid 2px;
+  color: white;
+}
+
+.btn3:hover {
+  background-color: #004140;
+  border: white solid 2px;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 327px;
+    height: 1502px;
+  }
+
+  .allCard {
+    position: relative;
+    width: 100%;
+    height: 1326px;
+    background-color: #e28625;
+    border-radius: 8px;
+  }
+
+  .secThdCard {
+    position: absolute;
+    top: unset;
+    bottom: 0;
+    width: 100%;
+    height: 884px;
+    background-color: #006971;
+    border-radius: 8px;
+  }
+
+  .thardCard {
+    position: absolute;
+    top: unset;
+    bottom: 0;
+    width: 100%;
+    height: 442px;
+    background-color: #004140;
+    border-radius: 8px;
+  }
+
+  .explain {
+    margin-bottom: 25px;
+  }
+}
