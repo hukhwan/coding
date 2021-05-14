@@ -58,7 +58,7 @@
 
 
 7.  바로가기 url -> https://hukhwan.github.io/coding/HTML_CSS/pract7_pod_requext_access/request_access_page.html
-
+    개선필요.
 
   
  
