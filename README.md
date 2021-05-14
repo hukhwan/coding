@@ -9,7 +9,7 @@
 
 ##작업 내용
 
-1. Instargram_Profile (pract1)
+1. Instargram_Profile (pract1) 바로가기 url -> https://hukhwan.github.io/coding/HTML_CSS/HTML_CSS/pract1_profile/profile.html
   - 인스타그램 프로필
   - 단순 레이아웃 배치
   - 인스타그램 프로필 이미지 참조 <br>
@@ -17,7 +17,7 @@
     https://www.instagram.com/
   - **time() script 참고 //공부중**
   
-2. Admin Dashborad (pract2)
+2. Admin Dashborad (pract2) 바로가기 url -> https://hukhwan.github.io/coding/HTML_CSS/pract2_dashboard_kit/dash.html
   - 관리자 페이지 대시보드
   - 실습 중점사항
     1. 레이아웃 배치.
@@ -32,7 +32,7 @@
        기호, 글자를 포함한 li 박스 내부 전체에 <a>적용
     3. flex 공부
 
-3. Kmong_Main_Page (pract3)
+3. Kmong_Main_Page (pract3) 바로가기 url -> https://hukhwan.github.io/coding/HTML_CSS/pract3_kmong_clone/kmongClone.html
   - 프리랜서 마켓 '크몽' 메인 페이지
   - 실습 중점사항
     1. 메인 페이지 레이아웃 전체 mark-up 후, 개선점 식별 & 학습
@@ -47,14 +47,18 @@
        header 내부 img, background의 영향으로 보임.
        position에 대한 이해
     2. .mainCategoriLine  hover가 자연스럽지 않음.
-    
-  
-  
-  
-  
-  
-  
-  
-  
+      
+4.  바로가기 url -> https://hukhwan.github.io/coding/HTML_CSS/pract4_preview_card/view_card.html
+
+
+5.  바로가기 url -> https://hukhwan.github.io/coding/HTML_CSS/pract5_landing_page/index.html
+
+
+6.   바로가기 url -> https://hukhwan.github.io/coding/HTML_CSS/pract6_Card_Component/card_component.html
+
+
+7.  바로가기 url -> https://hukhwan.github.io/coding/HTML_CSS/pract7_pod_requext_access/request_access_page.html
+    개선필요.
+
   
  
