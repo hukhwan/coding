@@ -9,7 +9,7 @@
 
 ##작업 내용
 
-1. Instargram_Profile (pract1) 바로가기 url -> https://hukhwan.github.io/coding/HTML_CSS/HTML_CSS/pract1_profile/profile.html
+1. Instargram_Profile (pract1) 바로가기 url -> https://hukhwan.github.io/coding/HTML_CSS/pract1_profile/profile.html
   - 인스타그램 프로필
   - 단순 레이아웃 배치
   - 인스타그램 프로필 이미지 참조 <br>
