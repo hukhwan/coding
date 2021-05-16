@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  min-height: 100%;
+  font-size: 16px;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  max-width: 600px;
+}
+
+.headers {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px 50px;
+  position: relative;
+}
+
+.headLogo {
+  display: block;
+  background-image: url("https://uploads-ssl.webflow.com/5ef94eaff08f2239c50b1004/5ef94ed1f08f2249820b10ba_CI_Kakaoventures_black-p-500.png");
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 50px;
+  background-size: 80%;
+}
+
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
+.headerNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navList {
+  padding: 9px 20px;
+}
+
+.navList > a {
+  text-decoration: none;
+  color: gray;
+}
+
+/* figure open */
+.mainbackground {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.63), rgb(0, 0, 0, 0.63)),
+    url("https://uploads-ssl.webflow.com/5ef94eaff08f2239c50b1004/5f04ca3b5c89ec3ba870c26a_%EA%B7%B8%EB%A6%BC1.jpg")
+      no-repeat;
+  background-size: cover;
+  height: 56vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.copilot {
+  width: 35%;
+}
+
+.copilotExplain {
+  width: 40%;
+  font-size: 1.2em;
+  color: white;
+}
+/* figure close */
+
+.sectionList {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.sectionList > li {
+  margin: 1em;
+}
+
+.section {
+  width: 70%;
+  margin: auto;
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+
+.secTwo,
+.secFour {
+  background-color: rgb(201, 201, 201);
+}
+
+.etcSurvice img {
+  width: 30px;
+}
