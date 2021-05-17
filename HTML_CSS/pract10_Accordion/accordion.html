@@ -7,7 +7,32 @@
     <link rel="head icon" href="" type="image/icon" />
     <link rel="stylesheet" href="./accordion.css" />
     <script src="https://kit.fontawesome.com/f968a989c6.js" crossorigin="anonymous"></script>
-    <script src="./accordion.js" defer></script>
+    <script defer>
+      const elements = document.querySelectorAll(".faqList");
+
+      elements.forEach((element) => {
+        let btn = element.querySelector(".buton"); //   버튼
+        let icon = element.querySelector(".buton i"); //+-아이콘
+        let h1 = element.querySelector(".secheader h2");
+        var answer = element.querySelector(".explain"); //                .answer
+        var answers = document.querySelectorAll(".explain"); // .answer리스트?
+        btn.addEventListener("click", () => {
+          answers.forEach((ans) => {
+            let ansIcon = ans.parentElement.querySelector(".buton i");
+            let ansh1 = ans.parentElement.querySelector(".secheader h2");
+            if (answer !== ans) {
+              ans.classList.add("hideText");
+              ansIcon.className = "fas fa-chevron-down";
+              ansh1.className = "secondH";
+            }
+          });
+          answer.classList.toggle("hideText");
+          icon.className === "fas fa-chevron-down"
+            ? (icon.className = "fas fa-chevron-up") && (h1.className = "secondH2")
+            : (icon.className = "fas fa-chevron-down") && (h1.className = "secondH");
+        });
+      });
+    </script>
     <title>Accordion list</title>
   </head>
   <body>
