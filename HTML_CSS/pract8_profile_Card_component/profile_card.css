@@ -16,6 +16,7 @@ html {
 body {
   background-color: #19a1ae;
   height: 100vh;
+  font-size: 16px;
 }
 
 li {
@@ -24,8 +25,7 @@ li {
 
 .profile {
   position: relative;
-  width: 24.3%;
-  max-width: 350px;
+  width: 350px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -56,7 +56,7 @@ li {
 
 .bigfont {
   color: #2e3349;
-  font-size: 18px 18px 0 0;
+  font-size: 1.125em;
   line-height: 18.11px;
   font-weight: 700;
 }
@@ -66,7 +66,7 @@ li {
 }
 
 .live {
-  font-size: 14px;
+  font-size: 0.875em;
   color: #6b7082;
   margin-bottom: 28px;
 }
@@ -88,7 +88,7 @@ li {
 
 .listData {
   color: #6b7082;
-  font-size: 10px;
+  font-size: 0.625em;
   letter-spacing: 1.5px;
   line-height: 10.06px;
 }
