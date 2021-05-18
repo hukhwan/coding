@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.profile {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+}

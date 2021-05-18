@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+}
+
+body {
+  background-color: #ecf2f8;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.flexRo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 730px;
+  height: 280px;
+  /* background-image: url("./images/drawers.jpg");
+  background-size: 39.04% 100%;
+  background-repeat: no-repeat; */
+}
+
+.figureImg {
+  border-radius: 10px;
+}
+
+.contents {
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+  margin-left: -65px;
+  padding: 32px 40px 0;
+  font-size: 13px;
+  font-weight: 200;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+}
+
+.headComment {
+  font-size: 20px;
+  font-weight: 700;
+  color: #48556a;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+}
+
+.comment {
+  color: #6e8098;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  width: 362px;
+}
+
+.profileImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.name {
+  color: #48556a;
+  font-weight: 700;
+}
+
+.scriptDay {
+  color: #9daec2;
+}
+
+.shareIcon {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ecf2f8;
+}
+
+.shareImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup {
+  color: #9daec2;
+  position: absolute;
+  left: -110px;
+  top: -78px;
+  background-color: #48556a;
+  width: 248px;
+  padding: 18px 36px 17px 37px;
+  letter-spacing: 5px;
+  border-radius: 10px;
+}
+
+.popup:after {
+  border-top: 15px solid #48556a;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 10px solid transparent;
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  left: 45%;
+}
+
+.hideText {
+  display: none;
+}
+
+.shareIcon:active {
+  background-color: #6e8098;
+}
+.shareIcon:active .shareImg {
+  filter: brightness(5);
+}
+
+.shareImg2 {
+  transition-property: background-color, filter;
+}
+
+@media screen and (max-width: 900px) {
+  .popup:after {
+    display: none;
+  }
+}

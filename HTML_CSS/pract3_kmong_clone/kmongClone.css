@@ -107,12 +107,12 @@ a:visited {
   left: 20px;
 }
 
-.business:hover {
+.business:active {
   cursor: pointer;
   color: rgb(30, 71, 255);
 }
 
-.business:hover ~ .balloon {
+.business:active ~ .balloon {
   opacity: 100%;
   background-color: white;
 }

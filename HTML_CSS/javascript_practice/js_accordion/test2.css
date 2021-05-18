@@ -50,6 +50,7 @@ body {
   background-color: mediumspringgreen;
   color: white;
   transition: background-color 350ms ease-in-out;
+  /* 색상변환 트랜지션 */
 }
 
 .dropdown-container.open header {
@@ -67,6 +68,7 @@ body {
   transform: rotate(45deg);
   font-size: 1.8em;
   transition: transform 350ms ease-in-out;
+  /* 기호변환 트랜지션 */
 }
 
 .dropdown-container.open .expand {
@@ -78,6 +80,7 @@ body {
   overflow: hidden;
   line-height: 1.6;
   transition: max-height 350ms ease-in-out;
+  /* 메뉴리스트 트랜지션 */
 }
 
 /* padding can't be on article element because it won't collapse properly, add wrapper around contents */
