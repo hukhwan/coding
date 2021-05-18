@@ -1,0 +1,7 @@
+.img {
+  width: 100px;
+  height: 16px;
+  background-image: url("./images/icon-star.svg");
+  background-repeat: space;
+  
+}

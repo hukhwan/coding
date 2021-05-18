@@ -33,7 +33,7 @@ function openCurrAccordion(e) {
     }
   }
 }
-
+//jquery cmd버전확인 
 //Notes:
 /* Adding the 'open' class to the dropdown allows us to create
  * easier stylings for the different components of the dropdown.

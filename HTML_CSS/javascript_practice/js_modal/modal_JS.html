@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <button id="popup_open_btn">
+        <p>
+          (주)크몽은 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 상품, 상품정보, 거래에 관한 의무와 책임은
+          판매회원에게 있습니다.
+        </p>
+        <p>
+          (주)크몽 사이트의 상품/판매회원/중개 서비스/거래 정보, 콘텐츠, UI 등에 대한 무단복제, 전송, 배포, 스크래핑
+          등의 행위는 저작권법, 콘텐츠산업 진흥법 등 관련법령에 의하여 엄격히 금지됩니다. [안내 보기]
+        </p>
+        <address>Copyright &copy; 2021 kmong Inc. All rights reserved.</address>
+      </button>
+
+      <div id="my_modal">
+        <h3>콘텐츠산업 진흥법에 따른 표시</h3>
+        <div>
+          <img src="./source/footer-notice-contents.jpg" />
+
+          <ol>
+            <li>1. 콘텐츠의 명칭:상품/판매회원/중개 서비스 및 거래정보 등</li>
+            <li>2. 제작년월일: 개별 콘텐츠의 개시일 또는 갱신일</li>
+            <li>3. 제작자: (주)크몽 및 개별 판매회원</li>
+          </ol>
+
+          <p>
+            (주)크몽 사이트 상의 모든 콘텐츠는 '콘텐츠산업 진흥법'에 따라 게시일 또는 그 갱신일로부터 5년간
+            보호됩니다.<br />(제작자의 동의 없는 무단 복제 및 이용등을 금함)
+          </p>
+        </div>
+        <a class="modal_close_btn">닫기</a>
+      </div>
+
+      <script>
+        function modal(id) {
+          var zIndex = 9999;
+          var modal = document.getElementById(id);
+
+          var bg = document.createElement("div");
+          bg.setStyle({
+            position: "fixed",
+            zIndex: zIndex,
+            left: "0px",
+            top: "0px",
+            width: "100%",
+            height: "100%",
+            overflow: "auto",
+
+            backgroundColor: "rgba(0,0,0,0.4)",
+          });
+          document.body.append(bg);
+
+          modal.querySelector(".modal_close_btn").addEventListener("click", function () {
+            bg.remove();
+            modal.style.display = "none";
+          });
+
+          modal.setStyle({
+            position: "fixed",
+            display: "block",
+            boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+
+            zIndex: zIndex + 1,
+
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            msTransform: "translate(-50%, -50%)",
+            webkitTransform: "translate(-50%, -50%)",
+          });
+        }
+
+        Element.prototype.setStyle = function (styles) {
+          for (var k in styles) this.style[k] = styles[k];
+          return this;
+        };
+
+        document.getElementById("popup_open_btn").addEventListener("click", function () {
+          modal("my_modal");
+        });
+      </script>
+    </section>
+    <div class="lastBord"></div>
+    <div class="lastBord2"></div>
+    <div class="help">
+      <i class="far fa-question-circle"></i>
+      <p>고객센터</p>
+    </div>
+  </body>
+</html>
