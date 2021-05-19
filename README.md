@@ -49,16 +49,31 @@
     2. .mainCategoriLine  hover가 자연스럽지 않음.
       
 4.  바로가기 url -> https://hukhwan.github.io/coding/HTML_CSS/pract4_preview_card/view_card.html
-
+   - View Card
 
 5.  바로가기 url -> https://hukhwan.github.io/coding/HTML_CSS/pract5_landing_page/index.html
-
+   - Landing Page
 
 6.   바로가기 url -> https://hukhwan.github.io/coding/HTML_CSS/pract6_Card_Component/card_component.html
-
+   - Card_component
 
 7.  바로가기 url -> https://hukhwan.github.io/coding/HTML_CSS/pract7_pod_requext_access/request_access_page.html
-    개선필요.
-
+   - request access page 개선필요.
   
- 
+8.  바로가기 url -> https://hukhwan.github.io/coding/HTML_CSS/pract8_profile_Card_component/profile_card.html
+   - profile card
+  
+9.  바로가기 url -> https://hukhwan.github.io/coding/HTML_CSS/pract9_kakaoVentures_Clone/kakaoVentures_Clone.html
+   - kakaoVentures Clone  
+     Only HTML   / little css
+
+10.  바로가기 url -> https://hukhwan.github.io/coding/HTML_CSS/pract10_Accordion/accordion.html
+   - Accordion 
+     Javascript
+  
+11.  바로가기 url -> https://hukhwan.github.io/coding/HTML_CSS/pract11_social_proof/social_proof.html
+   - social_proof
+     Javascript
+12.  바로가기 url -> https://hukhwan.github.io/coding/HTML_CSS/pract12-article-card/article.html
+   - Articla Card
+     Javascript
