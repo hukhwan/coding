@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #fafafa;
+  color: #4d4f62;
+  min-width: 262px;
+}
+
+.mainHeader {
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 36px;
+  letter-spacing: 0.17px;
+  font-weight: 200;
+}
+
+.strg {
+  text-align: center;
+  font-weight: 600;
+}
+
+.mainComment {
+  text-align: center;
+  font-size: 0.9375em;
+  line-height: 25px;
+  letter-spacing: 0.1px;
+  font-weight: 400;
+  opacity: 50%;
+}
+
+.subHeader {
+  font-size: 1.25em;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.subComment {
+  font-size: 0.8125em;
+  line-height: 23px;
+  letter-spacing: 0.09px;
+  font-weight: 400;
+  opacity: 50%;
+}
+
+/* --------------------------------------------*/
+body {
+  padding-top: 85px;
+}
+
+.mainHeader {
+  margin-bottom: 13px;
+}
+
+.mainComment {
+  width: 80%;
+  margin-bottom: 76px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  position: relative;
+  width: 80%;
+  height: 222px;
+  padding: 27px 28px;
+  margin-bottom: 30px;
+}
+
+.subImg {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+}
+
+.cOne {
+  border-top: #44d3d2 solid 4px;
+}
+
+.cTwo {
+  border-top: #ea5454 solid 4px;
+}
+
+.cThree {
+  border-top: #fcae4a solid 4px;
+}
+
+.cFour {
+  border-top: #549ef2 solid 4px;
+}
+
+@media screen and (min-width: 1110px) {
+  body {
+    padding: 80px 165px;
+  }
+
+  .mainHeader {
+    font-size: 2.25em;
+    line-height: 54px;
+    letter-spacing: 0.25px;
+  }
+
+  .mainComment {
+    width: 540px;
+    margin-bottom: 64px;
+  }
+
+  .card {
+    width: 350px;
+    height: 250px;
+    padding: 32px;
+  }
+
+  .cardGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card23 {
+    margin-right: 30px;
+  }
+
+  .cOne {
+    margin-right: 30px;
+  }
+
+  .cTwo {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .card23 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50.694%;
+  }
+
+  .card {
+    margin-bottom: 0;
+  }
+
+  .cTwo {
+    margin-right: 30px;
+  }
+}
