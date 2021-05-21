@@ -19,7 +19,7 @@ function validate() {
   } else {
     $result.text(" Please provide a valid email :(");
     $result.css("opacity", "100%");
-    $result.css("color", "red");
+    $result.css("color", "#FF7979");
     $form.css("border-color", "red");
     $image.css("opacity", "100%");
   }
@@ -27,3 +27,4 @@ function validate() {
 }
 
 $("#validate").on("click", validate);
+
