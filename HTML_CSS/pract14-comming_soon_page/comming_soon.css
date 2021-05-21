@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap");
+
+.form {
+  border: #ce9898 solid 1px;
+}
+
+.result {
+  opacity: 0%;
+}
+
+.resultImg {
+  opacity: 0%;
+}
