@@ -80,3 +80,6 @@
      
 13.  바로가기 url -> https://hukhwan.github.io/coding/HTML_CSS/pract13-fourCard_feature_section/feature.html
    - Feature Card
+  
+14.  바로가기 url -> https://hukhwan.github.io/coding/HTML_CSS/pract14-comming_soon_page/comming_soon.html
+   - Coming Soon Card
