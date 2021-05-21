@@ -2,14 +2,196 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap");
 
+* {
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0 auto;
+}
+
+body {
+  min-width: 300px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.logo {
+  margin: 32px;
+  width: 26.666%;
+  height: 100%;
+}
+
+.backImgGirl {
+  background-color: #ce9898;
+  background-image: url("./images/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 64px;
+}
+
+.soonCard {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.headComment {
+  max-width: 311px;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: 10.83px;
+  font-weight: 300;
+  color: #ce9898;
+  margin-bottom: 16px;
+}
+
+.comingSoon {
+  color: #423a3a;
+}
+
+.Comment {
+  width: 83%;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ce9898;
+  margin-bottom: 32px;
+}
+
 .form {
+  position: relative;
   border: #ce9898 solid 1px;
+  border-radius: 28px;
+  height: 48px;
+  width: 83%;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  margin-bottom: 8px;
+}
+
+#email {
+  border-style: none;
+  margin: 0;
+}
+
+#email::placeholder {
+  color: #ce9898;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  opacity: 50%;
+}
+
+.emailLabel {
+  margin: 0;
+}
+
+#validate {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  outline: none;
+  border: 0;
+  background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
+  height: 50px;
+  width: 64px;
+  border-radius: 28px;
 }
 
 .result {
   opacity: 0%;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 400;
+  text-align: left;
+  width: 70%;
 }
 
 .resultImg {
+  position: absolute;
+  right: 72px;
   opacity: 0%;
+  margin: 0;
+}
+
+@media screen and (min-width: 900px) {
+  * {
+    margin: 0;
+    text-align: left;
+  }
+
+  body {
+    height: 800px;
+    min-width: 900px;
+    padding-left: 11.458%;
+  }
+
+  .logo {
+    margin: 0;
+    margin-top: 76px;
+    margin-bottom: 136.74px;
+    width: 157.5px;
+    height: 31px;
+  }
+
+  .backImgGirl {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url("./images/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    width: 42.361%;
+    height: 800px;
+    margin-bottom: 0;
+  }
+
+  .headComment {
+    max-width: 444px;
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: 17.32px;
+    font-weight: 300;
+    margin-bottom: 32px;
+  }
+
+  .Comment {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 40px;
+    width: 30.83%;
+  }
+
+  .form {
+    width: 31%;
+    height: 54px;
+  }
+
+  #email::placeholder {
+    font-size: 16px;
+  }
+
+  #validate {
+    height: 56px;
+    width: 100px;
+    border-radius: 28px;
+    text-align: center;
+  }
+
+  .resultImg {
+    right: 116px;
+  }
+
+  .result {
+    line-height: 28px;
+    font-weight: 400;
+    width: 190px;
+    margin-left: 30px;
+  }
+
+  .soonCard {
+    margin-bottom: 0;
+  }
 }
