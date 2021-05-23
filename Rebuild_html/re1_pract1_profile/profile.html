@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./cssReset.css" />
+    <link rel="stylesheet" href="" />
+    <script language="javascript">
+      function time() {
+        var time = new Date();
+        document.getElementById("now").innerHTML = time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
+        setInterval("time()", 1000);
+      }
+    </script>
+
+    <title>instargram profile clone</title>
+  </head>
+  <body onload="time()">
+    <header>
+      <div>
+        <div>
+          <i class="fas fa-ellipsis-h"></i>
+          <p>Company</p>
+          <i class="fas fa-wifi"></i>
+        </div>
+        <div id="now"></div>
+        <i class="fas fa-battery-three-quarters"></i>
+      </div>
+
+      <div>
+        <i class="fas fa-user-plus"></i>
+        <h1>Take a look</h1>
+        <i class="fas fa-history"></i>
+      </div>
+    </header>
+
+    <div>
+      <img src="./source/capt.png" alt="Profile image" />
+
+      <div>
+        <ul>
+          <li>
+            <strong>1.220</strong>
+            <p>post</p>
+          </li>
+
+          <li>
+            <strong>2.236</strong>
+            <p>followers</p>
+          </li>
+
+          <li>
+            <strong>678</strong>
+            <p>following</p>
+          </li>
+        </ul>
+
+        <div>
+          <a href="#" type="_blank">Edit profile</a>
+          <a href="#" type="_blank"><i class="fas fa-cog"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <p>T'ekaalok <br />What have you got for sale <br />Do you know you are a cat</p>
+
+    <div>
+      <div class="dotdotdot">
+        <i class="fas fa-ellipsis-v"></i>
+        <i class="fas fa-ellipsis-v"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+      <i class="fas fa-list"></i>
+      <i class="far fa-id-card"></i>
+      <i class="far fa-bookmark"></i>
+    </div>
+
+    <div>
+      <img src="./source/11_IMG20210428_074110.png" alt="cat1" />
+      <img src="./source/10_IMG20210428_074110.png" alt="cat2" />
+      <img src="./source/9_IMG20210428_074110.png" alt="cat3" />
+      <img src="./source/8_IMG20210428_074110.png" alt="cat4" />
+      <img src="./source/7_IMG20210428_074110.png" alt="cat5" />
+      <img src="./source/6_IMG20210428_074110.png" alt="cat6" />
+      <img src="./source/5_IMG20210428_074110.png" alt="cat7" />
+      <img src="./source/4_IMG20210428_074110.png" alt="cat8" />
+      <img src="./source/3_IMG20210428_074110.png" alt="cat9" />
+      <img src="./source/2_IMG20210428_074110.png" alt="cat10" />
+      <img src="./source/1_IMG20210428_074110.png" alt="cat11" />
+      <img src="./source/0_IMG20210428_074110.png" alt="cat12" />
+    </div>
+
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i></li>
+        <li><i class="fas fa-search"></i></li>
+        <li><i class="far fa-plus-square"></i></li>
+        <li><i class="far fa-heart"></i></li>
+        <li><i class="far fa-user"></i></li>
+      </ul>
+    </nav>
+  </body>
+</html>

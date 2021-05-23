@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main {
+  overflow: hidden;
+  margin-bottom: 116px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgCenter {
+  display: none;
+}
+
+.imgL {
+  margin-left: -32px;
+}
+
+.imgR {
+  overflow: hidden;
+  margin-right: -32px;
+}
+
+.logo {
+  margin: 80px 0 108px;
+}
+
+.mainComment {
+  margin: auto;
+  margin-bottom: 34px;
+  width: 445px;
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 900;
+  color: #28283d;
+}
+
+.chapterOne {
+  margin-bottom: 72px;
+}
+
+.maineExplain {
+  color: #87879d;
+  margin: auto;
+  margin-bottom: 32px;
+  width: 540px;
+}
+
+.subComment {
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 900;
+  color: #28283d;
+}
+
+.beforeExplain {
+  margin-bottom: 16px;
+  font-weight: 900;
+  color: #4d96a9;
+  letter-spacing: 4px;
+}
+
+.marketingImg {
+  margin-bottom: 80px;
+  font-size: 0;
+}
+
+.markImgGrp {
+  font-size: 0;
+  display: inline-block;
+}
+
+.marketingImg img {
+  border-radius: 10px;
+  width: 255px;
+  margin-right: 13px;
+  margin-left: 13px;
+}
+
+.mainh3 {
+  margin: auto;
+  margin-bottom: 32px;
+  width: 445px;
+}
+
+.summery {
+  color: #87879d;
+  margin: auto;
+  margin-bottom: 184px;
+  width: 540px;
+}
+
+.foot {
+  position: relative;
+  bottom: 0;
+}
+
+.chapterTwo {
+  position: absolute;
+  top: -35%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.imgCover {
+  width: 100%;
+  background-image: url(./assets/desktop/image-footer.jpg);
+}
+
+.footh3 {
+  color: white;
+  width: 350px;
+}
+
+.BannerText {
+  padding: 0 165px;
+  height: 308px;
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background: rgba(41, 146, 165, 0.85);
+}
+
+.bannerSummery {
+  font-weight: 500;
+  width: 350px;
+}
+
+/* font-size */
+.f16 {
+  font-size: 16px;
+}
+
+.f18 {
+  font-size: 18px;
+}
+/* font-size close */
+
+/*------ chapter icon making ------*/
+
+.chapterBar {
+  margin: 0 auto;
+  width: 1px;
+  height: 84px;
+  border-left: #d6d6e2 solid 1px;
+  opacity: 0.25;
+}
+
+.chapterShape {
+  color: #87879d;
+  margin: 0 auto;
+  width: 56px;
+  height: 56px;
+  border: rgba(185, 185, 204, 0.25) solid 1px;
+  border-radius: 50%;
+  background-color: #fafafa;
+  font-weight: 700;
+  padding: 15px 17px;
+}
+
+/*------ chapter icon making close ----- */
+
+/* -------button style-------- */
+.buton {
+  margin: 8px;
+  padding: 16px 29px;
+  border-radius: 29px;
+  color: white;
+  border-style: none;
+}
+
+.Blue {
+  background-color: #4d96a9;
+}
+
+.versionBlue {
+  color: #8fe3f9;
+}
+
+.Blue:hover {
+  background-color: #71c0d4;
+}
+
+.Pupple {
+  background-color: #855fb1;
+}
+
+.versionPupple {
+  color: #d9b8ff;
+}
+
+.Pupple:hover {
+  background-color: #b18bdd;
+}
+/*  -----button style end-- --- */
+
+/* flex */
+.flexRo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* flex end */
+
+@media screen and (max-width: 1200px) {
+  body {
+    width: 100%;
+  }
+
+  .logo {
+    margin: 48px 0 64px;
+  }
+
+  .main {
+    margin-left: 24px;
+    margin-right: 24px;
+    display: block;
+  }
+
+  .BannerText {
+    flex-direction: column;
+    padding: 0;
+    height: 428px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background: rgba(41, 146, 165, 0.85);
+  }
+
+  .imgCenter {
+    max-width: 770px;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+
+  .imgL,
+  .imgR {
+    display: none;
+  }
+
+  .marketingImg img {
+    width: 164px;
+    margin: 5px;
+  }
+
+  .chapterTwo {
+    top: -25%;
+  }
+
+  .imgCover {
+    width: 100%;
+    height: 428px;
+    background-image: url("./assets/tablet/image-footer.jpg");
+  }
+
+  .mainComment,
+  .maineExplain,
+  .mainh3,
+  .summery,
+  .footh3,
+  .bannerSummery {
+    width: 100%;
+  }
+
+  .mainComment {
+    margin-top: 72px;
+    max-width: 339px;
+    font-size: 48px;
+  }
+
+  .maineExplain {
+    max-width: 457px;
+    font-size: 16px;
+  }
+
+  .mainh3 {
+    font-size: 40px;
+    max-width: 445px;
+  }
+
+  .summery {
+    font-size: 16px;
+    max-width: 573px;
+  }
+
+  .footh3 {
+    max-width: 457px;
+  }
+
+  .bannerSummery {
+    max-width: 573px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    width: 375px;
+  }
+
+  .mainComment {
+    max-width: 327px;
+    font-size: 40px;
+  }
+
+  .maineExplain {
+    max-width: 327px;
+  }
+
+  .mainh3 {
+    font-size: 32px;
+    max-width: 327px;
+  }
+
+  .summery {
+    max-width: 327px;
+  }
+
+  .footh3 {
+    max-width: 327px;
+  }
+
+  .bannerSummery {
+    max-width: 327px;
+  }
+
+  .mainButon > button {
+    display: block;
+    margin: auto;
+    margin-bottom: 16px;
+  }
+}

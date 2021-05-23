@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  font-family: Inter;
+  font-weight: 400;
+  background-color: #0a0c1c;
+  color: white;
+}
+
+.previewCard {
+  width: 1110px;
+  background-color: #1b1937;
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.previewImg {
+  position: relative;
+  width: 100%;
+}
+
+.previewImg > img {
+  width: 540px;
+  filter: brightness(0.9);
+}
+
+.backcolor {
+  width: 540px;
+  height: 446px;
+  position: absolute;
+  top: 0;
+  background-color: hsl(277, 64%, 61%);
+  opacity: 60%;
+}
+
+.cardExplain {
+  margin: 71px 75px 0 72px;
+}
+
+.cardExplain h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  margin-bottom: 25px;
+}
+
+.cardExplain strong {
+  color: hsl(277, 64%, 61%);
+}
+
+.explain {
+  margin-right: 29px;
+}
+
+.explain p {
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 75%;
+  margin-bottom: 72px;
+}
+
+.explain dl {
+  display: flex;
+  justify-content: space-between;
+}
+
+.explain div {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.explain dt {
+  font-family: Lexend Deca;
+  font-size: 12px;
+  opacity: 60%;
+  letter-spacing: 1px;
+}
+
+.explain dd {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .previewCard {
+    min-width: 327px;
+    top: 70%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 0;
+  }
+
+  body {
+    height: 100%;
+    text-align: center;
+  }
+
+  .previewImg {
+    height: 100%;
+  }
+
+  .previewImg > img {
+    width: 100%;
+  }
+
+  .backcolor {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cardExplain {
+    margin: 40px 31.5px 0;
+  }
+
+  .cardExplain h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .cardExplain p {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .explain {
+    margin: 0;
+  }
+
+  .explain dl {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  dl > div {
+    margin-bottom: 24px;
+  }
+}
