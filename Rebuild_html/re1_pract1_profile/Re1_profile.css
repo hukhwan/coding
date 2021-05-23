@@ -1,0 +1,138 @@
+* {
+  font-family: sans-serif;
+  color: rgb(77, 77, 77);
+}
+
+body {
+  background: linear-gradient(rgb(252, 255, 72), rgb(255, 99, 133)) no-repeat 100%;
+}
+
+.profile {
+  background-color: white;
+  width: 80%;
+  min-width: 600px;
+  margin: auto;
+  padding: 10px 0;
+}
+
+.flexRo {
+  display: flex;
+}
+
+header {
+  padding: 0 60px;
+  border-bottom: gray solid 1px;
+}
+
+.headOpt1,
+.headOpt2 {
+  justify-content: space-between;
+}
+
+.headOpt1 {
+  font-size: 15px;
+}
+
+.headOpt2 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.time {
+  margin-right: 80px;
+}
+
+.main {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+.profileImg {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: linear-gradient(rgb(252, 255, 72), rgb(255, 99, 133));
+}
+
+.profileImg::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 120px;
+  height: 120px;
+  background: white url("./source/capt.png") no-repeat center / 100% 100%;
+  border-radius: 50%;
+  border: white solid 5px;
+}
+
+.infoGrp {
+  width: 70%;
+}
+
+.information {
+  justify-content: space-around;
+  text-align: center;
+}
+
+.information strong {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.information p {
+  font-size: 15px;
+  color: gray;
+  font-weight: 700;
+}
+
+.buttonBox {
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.buttonBox > a {
+  display: block;
+  padding: 15px 0 15px;
+  text-align: center;
+  border: rgb(197, 197, 197) solid 1px;
+  border-radius: 8px;
+}
+
+.edit {
+  width: 80%;
+  margin-right: 5px;
+}
+
+.option {
+  width: 13%;
+}
+
+.comment {
+  margin: 0 60px 20px;
+  font-size: 20px;
+}
+
+.imgAlign {
+  padding: 20px 0;
+  justify-content: space-around;
+  font-size: 35px;
+  text-align: center;
+  border-top: gray solid 1px;
+}
+
+.imgList {
+  text-align: center;
+}
+
+.imgList img {
+  width: 32%;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
