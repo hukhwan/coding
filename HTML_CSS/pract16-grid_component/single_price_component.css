@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap");
+
+* {
+  font-family: "Karla", sans-serif;
+  margin: auto;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.component {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44.0972%;
+}
+
+.headLine h1 {
+  font-size: 24px;
+  line-height: 28.06px;
+  letter-spacing: -0.3px;
+  font-weight: 700;
+  color: #2ab3b1;
+}
+
+.component p {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  font-weight: 400;
+  color: white;
+}
+
+.headLine {
+  padding: 40px;
+  background-color: white;
+}
+
+.headLine p {
+  color: #9aa7be;
+  margin-top: 11px;
+}
+
+.component .headLine .impact {
+  font-weight: 700;
+  margin-top: 24px;
+  color: #c0df33;
+  line-height: 21.04px;
+}
+
+.content {
+  display: flex;
+  background-color: #2ab3b1;
+}
+
+.content h2 {
+  font-size: 18px;
+  line-height: 21.04px;
+  letter-spacing: -0.22px;
+  font-weight: 700;
+  color: white;
+}
+
+.subscription {
+  width: 50%;
+  padding: 40px;
+}
+
+.subscription .price {
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.534);
+}
+
+.subscription strong {
+  color: white;
+  font-size: 32px;
+  line-height: 37.41px;
+  letter-spacing: -0.4px;
+  font-weight: 700;
+  opacity: 100%;
+}
+
+.btn {
+  background-color: #c0df33;
+  width: 100%;
+  padding: 14px 0;
+  text-align: center;
+  margin-top: 26px;
+  font-weight: 700;
+  line-height: 18.7px;
+  border-radius: 5px;
+}
+
+.whyUs {
+  width: 50%;
+  padding: 40px;
+  background-color: #51c2c0;
+  color: white;
+  opacity: 0.75;
+}
+
+.whyUs h2 {
+  margin-bottom: 18px;
+}
+
+.whyUs li {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.17px;
+}
+
+@media screen and (max-width: 780px) {
+  .component {
+    position: static;
+    top: unset;
+    left: unset;
+    transform: unset;
+    margin: auto;
+    min-width: 311px;
+  }
+  .content {
+    display: block;
+  }
+
+  .headLine {
+    padding: 28px 24px 32px;
+    background-color: white;
+  }
+
+  .subscription {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .whyUs {
+    width: 100%;
+    padding: 24px;
+  }
+}
