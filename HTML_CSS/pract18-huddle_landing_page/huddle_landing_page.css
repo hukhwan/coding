@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(98, 58, 172);
+}
+
+.huddle {
+  background: rgb(98, 58, 172) url("./images/bg-desktop.svg") no-repeat top right 100%;
+  background-size: contain;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  padding: 0 80px;
+  min-width: 1280px;
+}
+
+.logo {
+  position: absolute;
+  top: 64px;
+  left: 80px;
+  width: 200px;
+}
+
+.mockups {
+  margin-right: 59px;
+  margin-top: 200px;
+  width: 696px;
+  height: 493px;
+}
+
+.content {
+  position: relative;
+  color: white;
+  margin-top: 232px;
+  min-width: 390px;
+}
+
+.content h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+  margin-bottom: 24px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  max-width: 900px;
+}
+
+.content #button {
+  width: fit-content;
+  padding: 13px 64px;
+  background-color: white;
+  box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+  border-radius: 28px;
+  color: #684bb1;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+.goChennel {
+  display: flex;
+  position: absolute;
+  bottom: 100px;
+  right: 30px;
+}
+
+.goChennel p {
+  margin-right: 16px;
+  color: white;
+  text-align: center;
+  width: 40px;
+  padding: 8px 0;
+  border: white solid 1px;
+  border-radius: 50%;
+}
+
+.goChennel:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 999px) {
+  .huddle {
+    background: rgb(98, 58, 172) url("./images/bg-mobile.svg") no-repeat top;
+    background-size: 100%;
+    height: unset;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    min-width: 300px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .mockups {
+    margin-right: 0;
+    margin-top: 127px;
+    width: 80%;
+    height: 80%;
+  }
+
+  .content {
+    margin-top: 60px;
+    min-width: unset;
+    width: 80%;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+
+  .content p {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: unset;
+  }
+
+  .content #button {
+    width: fit-content;
+    padding: 11.29px 75.5px;
+    font-size: 12px;
+    line-height: 18px;
+    margin: auto;
+    margin-bottom: 132px;
+  }
+
+  .goChennel {
+    position: absolute;
+    bottom: 0px;
+    right: 48%;
+    transform: translateX(50%);
+  }
+
+  .goChennel p {
+    margin-right: 16px;
+    color: white;
+    text-align: center;
+    width: 40px;
+    padding: 11px 0;
+    border: white solid 1px;
+    border-radius: 50%;
+  }
+}
