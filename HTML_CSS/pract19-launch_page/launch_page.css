@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap");
+* {
+  font-family: "Barlow", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 64px 165px 39px;
+}
+
+.flexRo {
+  display: flex;
+}
+
+.logoLine {
+  margin: 0 auto;
+  max-width: 1440px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 83px;
+}
+
+.logoLine > img {
+  width: 40px;
+  height: 40px;
+}
+
+.logoLine > a {
+  padding: 16px 26px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #162542;
+  background-color: #e8eff2;
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+
+.keyboardLine,
+.keyboardLine2 {
+  justify-content: center;
+}
+
+.keyboardLine > .content {
+  margin-right: 100px;
+}
+
+.keyboardLine h1 {
+  font-size: 56px;
+  line-height: 56px;
+  font-weight: 900;
+  color: #162542;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.keyboardLine p {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #7b8bad;
+  margin-bottom: 40px;
+}
+
+.keyboardLine a {
+  display: block;
+  width: fit-content;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.btn {
+  align-items: center;
+}
+
+.keyboardLine .btn > :first-child {
+  color: white;
+  background-color: #f16718;
+  padding: 16px 27px;
+  border-radius: 8px;
+  margin-right: 40px;
+}
+
+.keyboardLine2 {
+  align-items: center;
+  margin-bottom: 168px;
+}
+
+.keyboardLine2 strong {
+  display: block;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 900;
+  color: #162542;
+  margin-bottom: 27px;
+  text-transform: uppercase;
+}
+
+.keyboardLine2 p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #7b8bad;
+}
+
+figure {
+  position: relative;
+  margin: 0;
+}
+
+.figureimg,
+.figureimg2 {
+  display: flex;
+}
+
+.figureimg > img,
+.figureimg2 > img {
+  height: 480px;
+  border-radius: 20px;
+  margin: 15px;
+}
+
+.figureimg div > img {
+  position: absolute;
+  top: 15px;
+}
+
+.figureimg2 div > img {
+  position: absolute;
+  left: -50%;
+  transform: translate(50%);
+  bottom: 15px;
+}
+
+.figureimg2 {
+  margin-right: 90px;
+}
+
+.phoneKeyboard {
+  position: relative;
+  height: 480px;
+  width: 255px;
+  border-radius: 20px;
+  background: #f16718;
+  margin: 15px;
+}
+
+.phoneKeyboard::before {
+  background: url("./assets/desktop/image-phone-and-keyboard.jpg");
+  background-size: contain;
+  opacity: 0.1;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+.squareBox {
+  height: 480px;
+}
+
+.explain {
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-bottom: 128px;
+  max-width: 1440px;
+}
+
+.explain img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.explain .imgback {
+  position: relative;
+  border-radius: 16px;
+  background-color: #f16718;
+  height: 65px;
+  width: 65px;
+  margin-bottom: 48px;
+}
+
+.explain > div {
+  margin-right: 30px;
+}
+.explain > div:last-child {
+  margin-right: 0;
+}
+
+.explain h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 900;
+  color: #162542;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  width: 80%;
+}
+
+.explain p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #7b8bad;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+  color: #7b8bad;
+  font-weight: 700;
+}
