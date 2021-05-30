@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600;700&family=Ubuntu:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600;700&family=Ubuntu:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.blogMain em {
+  font-style: unset;
+  display: block;
+}
+
+.blogMain a {
+  display: flex;
+  align-items: center;
+}
+
+.blogMain {
+  font-family: "Overpass", sans-serif;
+}
+
+.blogMain footer {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.blogMain header {
+  padding: 59px 161px 155px 167px;
+  position: relative;
+  background: linear-gradient(123deg, #ff9071 0%, #ff3e54 100%);
+  border-radius: 0px 0px 0px 100px;
+}
+
+.blogMain header .navBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 119px;
+}
+
+.blogMain header .navBox .logo {
+  background: url("./images/logo.svg") 100% 100%;
+  margin-right: 64.38px;
+  width: 100px;
+  height: 40px;
+}
+
+.blogMain header nav,
+.blogMain header nav ul {
+  display: flex;
+}
+
+.blogMain header nav {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.blogMain header nav li {
+  margin-right: 32px;
+}
+
+.blogMain header nav li a {
+  color: white;
+  font-size: 16px;
+  line-height: 18.38px;
+  font-weight: 700;
+}
+
+.blogMain header nav li a .arrow {
+  margin-left: 8px;
+  background: url("./images/icon-arrow-light.svg") no-repeat 100%;
+  background-size: cover;
+  width: 8px;
+  height: 4px;
+}
+
+.blogMain header nav li .navMenu {
+  display: none;
+}
+
+.blogMain header .explain {
+  text-align: center;
+  margin: auto;
+  color: white;
+}
+
+.blogMain header .explain h2 {
+  font-size: 64px;
+  line-height: 98.05px;
+  letter-spacing: -1.92px;
+  font-weight: 600;
+}
+
+.blogMain header .explain p {
+  font-size: 20px;
+  line-height: 30.64px;
+  font-weight: 300;
+  margin-bottom: 43px;
+}
+
+.blogMain header .explain > div {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.blogMain header .explain a {
+  font-size: 16px;
+  line-height: 18.38px;
+  font-weight: 700;
+  border-radius: 28px;
+}
+
+.blogMain header .explain a:first-child {
+  color: #ff505c;
+  background-color: white;
+  padding: 15px 17px;
+  margin-right: 16px;
+}
+
+.blogMain header .explain a:last-child {
+  color: white;
+  border: white solid 1px;
+  padding: 15px 25px;
+}
