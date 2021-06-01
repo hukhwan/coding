@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./cssReset.css" />
-    <link rel="stylesheet" href="./cashierest.css" />
+    <!-- <link rel="stylesheet" href="./cssReset.css" />
+    <link rel="stylesheet" href="./cashierest.css" /> -->
     <script src="./cashierest.js" defer></script>
     <script src="https://kit.fontawesome.com/f968a989c6.js" crossorigin="anonymous"></script>
     <link rel="icon" href="./image/favicon_title.ico" type="image/x-icon" />
@@ -30,111 +30,92 @@
           <li><a href="#">자산조회</a></li>
           <li><a href="#">고객센터</a></li>
         </ul>
+
+        <ul>
+          <li>
+            <!--로그인 전-->
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+          </li>
+          <li>
+            <!--로그인-->
+            <div>
+              안녕하세요. <em>#</em>님
+              <em></em>
+            </div>
+            <div>
+              <p>마이페이지</p>
+              <p>로그아웃</p>
+            </div>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <dl>
+                <dt>빠른 서비스</dt>
+                <dd>원화입금</dd>
+                <dd>인증센터</dd>
+                <dd>1:1문의</dd>
+                <dd>CAP & HRT</dd>
+                <dd>API 관리</dd>
+              </dl>
+
+              <dl>
+                <dt>연관 서비스</dt>
+                <dd>
+                  <dl>
+                    <dt>앱 다운로드</dt>
+                    <dd>
+                      <div>
+                        캐셔레스트 앱
+                        <em></em>
+                      </div>
+                      <div>
+                        <button>
+                          Android
+                          <em></em>
+                        </button>
+                        <button>
+                          iOS
+                          <em></em>
+                        </button>
+                      </div>
+
+                      <div>
+                        캡페이 앱
+                        <em></em>
+                      </div>
+                      <div>
+                        <button>
+                          Android
+                          <em></em>
+                        </button>
+                        <button>
+                          iOS
+                          <em></em>
+                        </button>
+                      </div>
+                    </dd>
+                  </dl>
+                </dd>
+
+                <dd>
+                  <dl>
+                    <dt>연관 사이트</dt>
+                    <dd>
+                      <p>캡페이 파트너스 <em></em></p>
+                      <p>CAPay mall <em></em></p>
+                    </dd>
+                  </dl>
+                </dd>
+              </dl>
+            </a>
+          </li>
+        </ul>
       </nav>
-
-      <ul>
-        <li><a href="#">로그인</a></li>
-        <li><a href="#">회원가입</a></li>
-        <li>
-          <a href="javascript:void(0);">
-            <div></div>
-            <div></div>
-            <div></div>
-          </a>
-
-          <div>
-            <dl>
-              <dt>빠른 서비스</dt>
-              <dd>
-                <ul>
-                  <li><a href="#">원화입금</a></li>
-                  <li><a href="#">인증센터</a></li>
-                  <li><a href="#">1:1문의</a></li>
-                  <li><a href="#">CAP & HRT</a></li>
-                  <li><a href="#">API 관리</a></li>
-                </ul>
-              </dd>
-            </dl>
-
-            <dl>
-              <dt>연관 서비스</dt>
-              <dd>
-                <dl>
-                  <dt>앱 다운로드</dt>
-                  <dd>
-                    <ul>
-                      <li>
-                        <div>
-                          <p>캐셔레스트 앱</p>
-                          <p></p>
-                        </div>
-                        <div>
-                          <a href="#">
-                            Android
-                            <i></i>
-                            <span class="blind">안드로이드 다운로드</span>
-                          </a>
-                          <a href="#">
-                            iOS
-                            <i></i>
-                            <span class="blind">IOS 다운로드</span>
-                          </a>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div>
-                          <p>캡페이 앱</p>
-                          <p></p>
-                        </div>
-                        <div>
-                          <a href="#">
-                            Android
-                            <i></i>
-                            <span class="blind">안드로이드 다운로드</span>
-                          </a>
-                          <a href="#">
-                            iOS
-                            <i></i>
-                            <span class="blind">IOS 다운로드</span>
-                          </a>
-                        </div>
-                      </li>
-                    </ul>
-                  </dd>
-                </dl>
-
-                <dl>
-                  <dt>연관 사이트</dt>
-                  <dd>
-                    <ul>
-                      <li>
-                        <a href="#"
-                          >캡페이 파트너스
-                          <em></em>
-                          <em class="blind">></em>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#"
-                          >CAPay mall
-                          <em></em>
-                          <em class="blind">></em></a
-                        >
-                      </li>
-                    </ul>
-                  </dd>
-                </dl>
-              </dd>
-            </dl>
-          </div>
-        </li>
-      </ul>
     </header>
 
     <!-- 팝업 -->
-    <article>
+    <!-- <article>
       <h4>금융 및 전기통신금융사기 주의 안내</h4>
       <a href="#">자세히보기></a>
       <p>
@@ -176,16 +157,19 @@
           <th>웹사이트 주소</th>
           <th>연락처 번호</th>
         </tr>
+
         <tr>
           <td>금융감독원 보이스피싱 지킴이</td>
           <td><a href="#">https://phishing-keeper.fss.or.kr </a></td>
           <td>국번없이 1332</td>
         </tr>
+
         <tr>
           <td>경찰 민원포털</td>
           <td><a href="#"> https://minwon.police.go.kr</a></td>
           <td>국번없이 112</td>
         </tr>
+
         <tr>
           <td>인터넷 진흥원</td>
           <td><a href="#">https://kisa.or.kr</a></td>
@@ -201,29 +185,17 @@
         <p>오늘 하루 보지않기</p>
         <button type="submit">내용을 확인하고 동의 합니다.</button>
       </form>
-    </article>
+    </article> -->
 
     <!-- aside nav -->
-    <div>
-      <div>
-        <em></em>
-        <p>캐셔소식</p>
-      </div>
-
-      <div>
-        <em></em>
-        <p>TOP</p>
-      </div>
-    </div>
-
 
     <!-- 블록체인 금융플랫폼의 선두 -->
     <div>
       <!-- contents -->
       <div>
+        <!-- 목록 전체/숨기기 toggle , right bottom -->
         <div>
-          <!-- 목록 전체/숨기기 toggle , right bottom -->
-          <span></span>
+          <em><!-- 전체보기 --></em>
         </div>
 
         <div>
@@ -282,6 +254,7 @@
               <div></div>
               <div></div>
               <div></div>
+              <div></div>
               <!-- pause button -->
               <div></div>
               <!-- go before page -->
@@ -297,23 +270,24 @@
     <!-- 공지사항 / 뉴스피드 -->
     <div>
       <div>
-        <h3>공지사항</h3>
         <div>
+          <h3>공지사항</h3>
           <div>
-            <span class="blind">before page</span>
+            <div>
+              <span class="blind">before page</span>
+            </div>
+            <div>
+              <span class="blind">next page</span>
+            </div>
           </div>
-          <div>
-            <span class="blind">next page</span>
-          </div>
-        </div>
 
-        <ul>
-          <li>
-            <a href="#">[신규상장] 파일코인(FIL) KRW 마켓 상장 안내</a>
-            <span>11:28:14</span>
-          </li>
+          <ul>
+            <li>
+              <a href="#">[신규상장] 파일코인(FIL) KRW 마켓 상장 안내</a>
+              <span>11:28:14</span>
+            </li>
 
-          <!-- <li>
+            <!-- <li>
             <a href="#">[공지] 캐셔레스트 KRW 마켓 거래 유의 종목 해제 및 개선사항 점검</a>
             <span>2021-05-25</span>
           </li>
@@ -332,26 +306,27 @@
             <a href="#">[공지] BCH(비트코인 캐시) 입출금 재개 안내</a>
             <span>2021-05-18</span>
           </li> -->
-        </ul>
-      </div>
-
-      <div>
-        <h3>뉴스피드</h3>
-        <div>
-          <div>
-            <span class="blind">before page</span>
-          </div>
-          <div>
-            <span class="blind">next page</span>
-          </div>
+          </ul>
         </div>
 
-        <ul>
-          <li>
-            <a href="#">中 채굴 관련 업체, 중국 IP 접속 차단 및 상품 판매 중단</a>
-            <span>2021-05-26</span>
-          </li>
-        </ul>
+        <div>
+          <h3>뉴스피드</h3>
+          <div>
+            <div>
+              <span class="blind">before page</span>
+            </div>
+            <div>
+              <span class="blind">next page</span>
+            </div>
+          </div>
+
+          <ul>
+            <li>
+              <a href="#">中 채굴 관련 업체, 중국 IP 접속 차단 및 상품 판매 중단</a>
+              <span>2021-05-26</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -363,103 +338,126 @@
         <li>TRX 마켓</li>
         <li>CAP 마켓</li>
       </ul>
+      <!--마켓 click시 List에 데이터가 전해짐.-->
 
       <!-- 마켓 / 가격 상승하락 List -->
       <ol>
         <li>
           <div>
-            <h4><span>ETH</span>/KRW</h4>
+            <h4><span>##</span> <em>##</em></h4>
             <div>
               <!--가격 상승하락 박스-->
-              <div>
-                <span class="blind">금일대비 상승</span>
-              </div>
-              <p>7.37%</p>
+              <div></div>
+              <p><span>##</span> <em>##</em></p>
             </div>
           </div>
-          <p><span>3,442,500</span> KRW</p>
+          <p><span>##</span> <em>##</em></p>
         </li>
 
         <li>
           <div>
-            <h4><span>CAP</span>/KRW</h4>
+            <h4><span>##</span> <em>##</em></h4>
             <div>
               <!--가격 상승하락 박스-->
-              <div>
-                <span class="blind">금일대비 하락</span>
-              </div>
-              <p>4.89%</p>
+              <div></div>
+              <p><span>##</span> <em>##</em></p>
             </div>
           </div>
-          <p><span>331</span> KRW</p>
+          <p><span>##</span> <em>##</em></p>
         </li>
 
         <li>
           <div>
-            <h4><span>BTC</span>/KRW</h4>
+            <h4><span>##</span> <em>##</em></h4>
             <div>
               <!--가격 상승하락 박스-->
-              <div>
-                <span class="blind">금일대비 상승</span>
-              </div>
-              <p>3.14%</p>
+              <div></div>
+              <p><span>##</span> <em>##</em></p>
             </div>
           </div>
-          <p><span>48,403,000</span> KRW</p>
+          <p><span>##</span> <em>##</em></p>
         </li>
 
         <li>
           <div>
-            <h4><span>TRX</span>/KRW</h4>
+            <h4><span>##</span> <em>##</em></h4>
             <div>
               <!--가격 상승하락 박스-->
-              <div>
-                <span class="blind">금일대비 상승</span>
-              </div>
-              <p>100.8%</p>
+              <div></div>
+              <p><span>##</span> <em>##</em></p>
             </div>
           </div>
-          <p><span>100.8</span> KRW</p>
+          <p><span>##</span> <em>##</em></p>
         </li>
 
         <li>
           <div>
-            <h4><span>XRP</span>/KRW</h4>
+            <h4><span>##</span> <em>##</em></h4>
             <div>
               <!--가격 상승하락 박스-->
-              <div>
-                <span class="blind">금일대비 상승</span>
-              </div>
-              <p>4.05%</p>
+              <div></div>
+              <p><span>##</span> <em>##</em></p>
             </div>
           </div>
-          <p><span>1,266</span> KRW</p>
+          <p><span>##</span> <em>##</em></p>
         </li>
       </ol>
     </div>
 
-    <!-- <div>
+    <div>
+      <!--krw전환 메시지-->
       <div>
-        <h3>별도의 체결신청없이 최적의 가격으로 CKRW를 전환 하세요.</h3>
+        <h3>
+          <em>별도의 체결신청없이</em>
+          <br />최적의 가격으로 <strong>CKRW</strong>를 <strong>전환</strong> 하세요.
+        </h3>
         <p>
           간편전환 자세히 알아보기
           <span></span>
         </p>
       </div>
 
+      <!--usdt전환 메시지-->
       <div>
-          <p>사용</p>
-          <form action="get" method="#">
-              <input type="">
-              <label for="stableChange"></label>
-              <select name="stableChange" id="stableChange">
-                  <option value="KRW">KRW</option>
-                  <option value="USDT">USDT</option>
-                  <option value="CKRW">CKRW</option>
-              </select>
-          </form>
+        <h3>
+          <em>간편전환으로 USDT 투자 상품에 참여 해보세요.</em>
+          <br />USDT 투자 시 최대 <strong>연 4%</strong> 대 이자를 <strong>매일</strong> 지급 합니다.
+        </h3>
+        <p>
+          간편전환 자세히 알아보기
+          <span></span>
+        </p>
       </div>
-    </div> -->
+
+      <form action="get" method="#">
+        <div>
+          <div>
+            <p>사용</p>
+            <input type="text" value="10,000" />
+            <label for="fromChange"></label>
+            <select name="fromChange" id="fromChange">
+              <option value="KRW">KRW</option>
+              <option value="USDT">USDT</option>
+              <option value="CKRW">CKRW</option>
+            </select>
+          </div>
+          <em>사용가능 : <strong>##</strong> KRW</em>
+        </div>
+        <div>
+          <p>지급</p>
+          <input type="text" value="10,000" />
+          <label for="toChange"></label>
+          <select name="toChange" id="toChange">
+            <option value="CKRW">CKRW</option>
+            <option value="USDT">USDT</option>
+          </select>
+        </div>
+        <div>
+          <button type="submit">간편전환</button>
+          <em>최소 <strong>##</strong> / 최대 <strong>##</strong> KRW</em>
+        </div>
+      </form>
+    </div>
 
     <!-- 담보대출 -->
     <div>
@@ -623,6 +621,18 @@
           </a>
         </li>
       </ul>
+    </div>
+
+    <div>
+      <div>
+        <em></em>
+        <p>캐셔소식</p>
+      </div>
+
+      <div>
+        <em></em>
+        <p>TOP</p>
+      </div>
     </div>
 
     <footer>
