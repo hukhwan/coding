@@ -1,43 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
 
 * {
   font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;
   /* font-family: "Roboto", sans-serif; */
-}
-
-/*이미지 병합*/
-/* .image::before {
-  display: inline-block;
-  width: 110px;
-  height: 22px;
-  background-position: 0 -30px;
-  content: "";
-}
-
-.flexRo {
-  display: flex;
-  justify-content: space-around;
-}
-
-.image2::before {
-  display: inline-block;
-  width: 230px;
-  height: 461px;
-  background-position: 0 -49px;
-  content: "";
-}
-
-.image::before,
-.image2::before {
-  background-image: url("./image/merge_from.png");
-  background-repeat: no-repeat;
-} */
-
-/*flex*/
-.flexRo {
-  display: flex;
 }
 
 /* 블라인드처리 */
@@ -54,6 +21,7 @@
   position: relative;
   background: rgb(228, 235, 250);
   padding-top: 1.2rem;
+  padding-bottom: 0px;
 }
 
 .headLine {
@@ -93,7 +61,9 @@
 .headLine nav .navigation li a {
   font-weight: 500;
   font-size: 16px;
-  color: #20232a;
+  color: rgb(32, 35, 42);
+  letter-spacing: -0.5px;
+  font-family: "Noto Sans KR";
 }
 
 .headLine nav .navigation li a:hover {
@@ -113,6 +83,9 @@
   display: block;
   border-radius: 5px;
   box-shadow: 0 0 15px rgb(0 0 0 / 7%);
+  transition: max-height 350ms ease-in-out;
+  max-height: 0px;
+  overflow: hidden;
 }
 
 .headLine nav .mymoney > li {
@@ -156,6 +129,9 @@
   border-radius: 8px;
   border: rgb(233, 233, 233) solid 1px;
   box-shadow: 0 0 15px rgb(0 0 0 / 7%);
+  transition: max-height 350ms ease-in-out;
+  max-height: 0px;
+  overflow: hidden;
 }
 
 .fa-bars {
@@ -214,7 +190,7 @@
 
 .menu article .relativeSurvice dl > dt {
   padding: 8px 5px;
-  background-color: #e7e7e7;
+  background-color: #efefef;
   color: #697f91;
   font-size: 12px;
   border-top: #20232a solid 2px;
@@ -232,7 +208,7 @@
 
 .menu article .App:last-child {
   padding-top: 25px;
-  border-top: rgb(202, 202, 202) solid 1px;
+  border-top: rgb(228, 228, 228) solid 1px;
 }
 
 .App .AppLogo,
@@ -323,15 +299,60 @@
 
 .index .mainheader {
   width: 100%;
-  height: 428px;
+  height: 380px;
   margin: auto;
   background: rgb(228, 235, 250) url("./image/merge_image/merge_image.png") no-repeat;
-  background-position: center -1560px;
+  background-position: center -1602px;
 }
 
 .index .mainheader .mainhead {
-  margin-top: 100px;
   width: 1170px;
   margin: auto;
   padding-top: 120px;
+}
+
+.mainH2Grp .mainH2 h2 {
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 1;
+  color: #20232a;
+}
+
+.mainH2Grp .mainH2 p {
+  margin: 30px 0 40px;
+  font-size: 16px;
+  color: #666;
+  line-height: 26px;
+}
+
+.mainH2Grp .mainH2 .logInBox {
+  display: flex;
+}
+
+.mainH2Grp .mainH2 .logInBox a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 100px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.logInBox .logIn {
+  border: #046fd9 solid 2px;
+  color: #416ff4;
+  margin-right: 20px;
+}
+
+.logInBox .newBe {
+  background-color: #416ff4;
+  color: white;
+}
+
+.logInBox .logIn:hover,
+.logInBox .newBe:hover {
+  background-color: #2558ef;
+  color: white;
+  border: unset;
 }
