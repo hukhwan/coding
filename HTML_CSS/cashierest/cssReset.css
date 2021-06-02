@@ -133,6 +133,7 @@ table {
 }
 
 /* --------------my style-------------------- */
+a,
 a:active,
 a:visited,
 a:hover {
@@ -145,7 +146,14 @@ input,
 select {
   appearance: none;
   border: 0;
-  cursor: pointer;
+}
+
+input {
+  cursor: auto;
+}
+
+select {
+  cursor: hand;
 }
 
 input:focus {

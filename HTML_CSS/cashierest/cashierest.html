@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="./cssReset.css" />
-    <link rel="stylesheet" href="./cashierest.css" /> -->
+    <link rel="stylesheet" href="./cssReset.css" />
+    <link rel="stylesheet" href="./cashierest.css" />
     <script src="./cashierest.js" defer></script>
     <script src="https://kit.fontawesome.com/f968a989c6.js" crossorigin="anonymous"></script>
     <link rel="icon" href="./image/favicon_title.ico" type="image/x-icon" />
@@ -14,108 +14,126 @@
     </title>
   </head>
   <body>
-    <header>
-      <h1>
-        <a href="#" class="logoCashierest">
-          <span class="blind">캐셔레스트</span>
-        </a>
-      </h1>
+    <header class="mainHeader">
+      <div class="headLine">
+        <h1 class="logoCashierest">
+          <a href="./cashierest.html">
+            <span class="blind">캐셔레스트</span>
+          </a>
+        </h1>
 
-      <nav>
-        <ul>
-          <li><a href="#">거래소</a></li>
-          <li><a href="#">간편전환</a></li>
-          <li><a href="#">투자/대출</a></li>
-          <li><a href="#">자산 입출금</a></li>
-          <li><a href="#">자산조회</a></li>
-          <li><a href="#">고객센터</a></li>
-        </ul>
+        <nav>
+          <ul class="navigation">
+            <li><a href="./href_extra_page/href_extra_page1.html" target="_blank">거래소</a></li>
+            <li><a href="./href_extra_page/href_extra_page2.html" target="_blank">간편전환</a></li>
+            <li><a href="./href_extra_page/href_extra_page3.html" target="_blank">투자/대출</a></li>
+            <li><a href="./href_extra_page/href_extra_page4.html" target="_blank">자산 입출금</a></li>
+            <li class="viewMyMoney">
+              <a href="#">
+                자산조회
+                <ul class="mymoney">
+                  <li><a href="./href_extra_page/href_extra_page5.html" target="_blank">거래내역</a></li>
+                  <li><a href="./href_extra_page/href_extra_page6.html" target="_blank">자산내역</a></li>
+                </ul>
+              </a>
+            </li>
+            <li><a href="./href_extra_page/href_extra_page7.html">고객센터</a></li>
+          </ul>
 
-        <ul>
-          <li>
-            <!--로그인 전-->
-            <a href="#">로그인</a>
-            <a href="#">회원가입</a>
-          </li>
-          <li>
-            <!--로그인-->
-            <div>
-              안녕하세요. <em>#</em>님
-              <em></em>
-            </div>
-            <div>
-              <p>마이페이지</p>
-              <p>로그아웃</p>
-            </div>
-          </li>
-          <li>
-            <a href="javascript:void(0);">
-              <dl>
-                <dt>빠른 서비스</dt>
-                <dd>원화입금</dd>
-                <dd>인증센터</dd>
-                <dd>1:1문의</dd>
-                <dd>CAP & HRT</dd>
-                <dd>API 관리</dd>
-              </dl>
+          <ul class="logIn">
+            <li>
+              <!--로그인 전-->
+              <a href="#">로그인</a>
+              <a href="#">회원가입</a>
+            </li>
+            <!-- <li>
+              로그인
+              <a href="javascript:void(0);">
+                안녕하세요. <span>ID</span>님
+                <em></em>
+              </a>
+              <ul>
+                <li><a href="#" target="_blank">마이페이지</a></li>
+                <li><a href="#" target="_blank">로그아웃</a></li>
+              </ul>
+            </li> -->
+            <li class="menu">
+              <a href="javascript:void(0);">
+                <i class="fas fa-bars"><em class="blind">Menu</em></i>
+              </a>
+              <article>
+                <dl class="fastSurvice">
+                  <dt>빠른 서비스</dt>
+                  <dd><a href="#" target="_blank">원화입금</a></dd>
+                  <dd><a href="#" target="_blank">인증센터</a></dd>
+                  <dd><a href="#" target="_blank">1:1문의</a></dd>
+                  <dd><a href="#" target="_blank">CAP & HRT</a></dd>
+                  <dd><a href="#" target="_blank">API 관리</a></dd>
+                </dl>
 
-              <dl>
-                <dt>연관 서비스</dt>
-                <dd>
-                  <dl>
-                    <dt>앱 다운로드</dt>
-                    <dd>
-                      <div>
-                        캐셔레스트 앱
-                        <em></em>
-                      </div>
-                      <div>
-                        <button>
-                          Android
-                          <em></em>
-                        </button>
-                        <button>
-                          iOS
-                          <em></em>
-                        </button>
-                      </div>
+                <dl class="relativeSurvice">
+                  <dt>연관 서비스</dt>
+                  <dd>
+                    <dl>
+                      <dt>앱 다운로드</dt>
+                      <dd>
+                        <div class="App">
+                          <div class="AppLogo">
+                            캐셔레스트 앱
+                            <em></em>
+                          </div>
+                          <div class="market">
+                            <a href="#" target="_blank">
+                              <strong>Android</strong>
+                              <em></em>
+                            </a>
+                            <a href="#" target="_blank">
+                              <strong>iOS</strong>
+                              <em></em>
+                            </a>
+                          </div>
+                        </div>
 
-                      <div>
-                        캡페이 앱
-                        <em></em>
-                      </div>
-                      <div>
-                        <button>
-                          Android
-                          <em></em>
-                        </button>
-                        <button>
-                          iOS
-                          <em></em>
-                        </button>
-                      </div>
-                    </dd>
-                  </dl>
-                </dd>
+                        <div class="App">
+                          <div class="AppLogo2">
+                            캡페이 앱
+                            <em></em>
+                          </div>
+                          <div class="market">
+                            <a href="#" target="_blank">
+                              <strong>Android</strong>
+                              <em></em>
+                            </a>
+                            <a href="#" target="_blank">
+                              <strong>iOS</strong>
+                              <em></em>
+                            </a>
+                          </div>
+                        </div>
+                      </dd>
+                    </dl>
+                  </dd>
 
-                <dd>
-                  <dl>
-                    <dt>연관 사이트</dt>
-                    <dd>
-                      <p>캡페이 파트너스 <em></em></p>
-                      <p>CAPay mall <em></em></p>
-                    </dd>
-                  </dl>
-                </dd>
-              </dl>
-            </a>
-          </li>
-        </ul>
-      </nav>
+                  <dd class="relativeSite">
+                    <dl>
+                      <dt>연관 사이트</dt>
+                      <dd>
+                        <a href="#" target="#">캡페이 파트너스 <em></em></a>
+                        <a href="#" target="#">CAPay mall <em></em></a>
+                      </dd>
+                    </dl>
+                  </dd>
+                </dl>
+              </article>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <!-- 팝업 -->
-    <!-- <article>
+    <section class="index">
+      <!-- 팝업 -->
+      <!-- <article>
       <h4>금융 및 전기통신금융사기 주의 안내</h4>
       <a href="#">자세히보기></a>
       <p>
@@ -187,38 +205,37 @@
       </form>
     </article> -->
 
-    <!-- aside nav -->
-
-    <!-- 블록체인 금융플랫폼의 선두 -->
-    <div>
-      <!-- contents -->
-      <div>
-        <!-- 목록 전체/숨기기 toggle , right bottom -->
-        <div>
-          <em><!-- 전체보기 --></em>
-        </div>
-
-        <div>
+      <!-- 블록체인 금융플랫폼의 선두 -->
+      <div class="mainheader">
+        <!-- contents -->
+        <div class="mainhead">
+          <!-- 목록 전체/숨기기 toggle , right bottom -->
           <div>
-            <h2>블록체인 금융 플랫폼의 선두</h2>
-            <p>캐셔레스트는 디지털 자산 거래 및 결제, P2P 서비스를 제공하는 블록체인 금융 플랫폼의 선두 기업입니다.</p>
-            <div>
-              <a href="#">로그인</a>
-              <a href="#">회원가입</a>
-            </div>
+            <em><!-- 전체보기 & 숨기기 --></em>
           </div>
 
           <div>
+            <div>
+              <h2>블록체인 금융 플랫폼의 선두</h2>
+              <p>
+                캐셔레스트는 디지털 자산 거래 및 결제, P2P 서비스를 제공하는 블록체인 금융 플랫폼의 선두 기업입니다.
+              </p>
+              <div>
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+              </div>
+            </div>
+
             <ul>
               <li>
                 <a href="#">
-                  <span class="blind">신규 디지털 자산 SNS, PAY 종합 블록체인 BNA 상장!</span>
+                  <span class="blind">신규 디지털 자산 SNS, PAY 종합 블록체인 BNA 상장! 바로가기 클릭</span>
                 </a>
               </li>
 
               <li>
                 <a href="#">
-                  <span class="blind">출석체크 이벤트 매일 출석체크하고 333CKRW 받아가세요!</span>
+                  <span class="blind">출석체크 이벤트 매일 출석체크하고 333CKRW 받아가세요! 바로가기 클릭</span>
                 </a>
               </li>
 
@@ -230,19 +247,21 @@
 
               <li>
                 <a href="#">
-                  <span class="blind">원화 방문입금 서비스 방문입금시, 거래수수료 할인 혜택 및 코인 즉시출금 지원</span>
+                  <span class="blind"
+                    >원화 방문입금 서비스 방문입금시, 거래수수료 할인 혜택 및 코인 즉시출금 지원 바로가기 클릭</span
+                  >
                 </a>
               </li>
 
               <li>
                 <a href="#">
-                  <span class="blind">신규 디지털 자산 SNS, PAY 종합 블록체인 BNA 상장!</span>
+                  <span class="blind">신규 디지털 자산 SNS, PAY 종합 블록체인 BNA 상장! 바로가기 클릭</span>
                 </a>
               </li>
 
               <li>
                 <a href="#">
-                  <span class="blind">출석체크 이벤트 매일 출석체크하고 333CKRW 받아가세요!</span>
+                  <span class="blind">출석체크 이벤트 매일 출석체크하고 333CKRW 받아가세요! 바로가기 클릭</span>
                 </a>
               </li>
             </ul>
@@ -250,44 +269,51 @@
             <!-- slider 조절바 -->
             <div>
               <!-- page slide circle button -->
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+              <div><em class="blind">page one</em></div>
+              <div><em class="blind">page two</em></div>
+              <div><em class="blind">page three</em></div>
+              <div><em class="blind">page four</em></div>
+              <div><em class="blind">page five</em></div>
               <!-- pause button -->
-              <div></div>
+              <!--  <i class="fas fa-pause"></i>  -->
+              <div>
+                <i class="fas fa-pause blind"></i>
+                <em class="blind">page slide pause</em>
+              </div>
               <!-- go before page -->
-              <div></div>
+              <div><em class="blind">go before page</em></div>
               <!-- go after page -->
-              <div></div>
+              <div><em class="blind">go after page</em></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- 공지사항 / 뉴스피드 -->
-    <div>
+      <!-- 공지사항 / 뉴스피드 -->
       <div>
         <div>
-          <h3>공지사항</h3>
           <div>
+            <h3>공지사항</h3>
             <div>
-              <span class="blind">before page</span>
+              <div>
+                <span class="blind">before page</span>
+              </div>
+              <div>
+                <span class="blind">next page</span>
+              </div>
             </div>
-            <div>
-              <span class="blind">next page</span>
-            </div>
-          </div>
 
-          <ul>
-            <li>
-              <a href="#">[신규상장] 파일코인(FIL) KRW 마켓 상장 안내</a>
-              <span>11:28:14</span>
-            </li>
+            <ul>
+              <!--Chapter1 : 게시판을 만들고 jquery .load을 이용해 nthchild(되나..?) 1,2,3,4,5번째 파일을 불러온다.
+                불러올 내용. (1) nth-child(1) 제목, 날짜
+                Chapter2 : JS로 위로 슬라이드되는 slider 만들기.-->
+              <!--html문서 만들기 XXXXXX jquery에 값 쌍 생성하고 불러오게-->
+              <li>
+                <a href="#">[신규상장] 파일코인(FIL) KRW 마켓 상장 안내</a>
+                <span>11:28:14</span>
+              </li>
 
-            <!-- <li>
+              <!-- <li>
             <a href="#">[공지] 캐셔레스트 KRW 마켓 거래 유의 종목 해제 및 개선사항 점검</a>
             <span>2021-05-25</span>
           </li>
@@ -306,334 +332,369 @@
             <a href="#">[공지] BCH(비트코인 캐시) 입출금 재개 안내</a>
             <span>2021-05-18</span>
           </li> -->
-          </ul>
-        </div>
-
-        <div>
-          <h3>뉴스피드</h3>
-          <div>
-            <div>
-              <span class="blind">before page</span>
-            </div>
-            <div>
-              <span class="blind">next page</span>
-            </div>
+            </ul>
           </div>
 
-          <ul>
-            <li>
-              <a href="#">中 채굴 관련 업체, 중국 IP 접속 차단 및 상품 판매 중단</a>
-              <span>2021-05-26</span>
-            </li>
-          </ul>
+          <div>
+            <h3>뉴스피드</h3>
+            <div>
+              <div>
+                <span class="blind">before page</span>
+              </div>
+              <div>
+                <span class="blind">next page</span>
+              </div>
+            </div>
+
+            <!--만약 다른 웹페이지에서 기사 가져올수 있다면 만들어 보는것도.. +@ -->
+            <ul>
+              <li>
+                <a href="#">中 채굴 관련 업체, 중국 IP 접속 차단 및 상품 판매 중단</a>
+                <span>2021-05-26</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 마켓 List -->
-    <div>
+      <!-- 마켓 List -->
+      <div>
+        <h3 class="blind">마켓 리스트</h3>
+        <ul>
+          <li>KRW 마켓</li>
+          <li>USDT 마켓</li>
+          <li>TRX 마켓</li>
+          <li>CAP 마켓</li>
+        </ul>
+        <!--마켓 click시 List에 데이터가 전해짐.-->
+
+        <!-- 마켓 / 가격 상승하락 List -->
+        <!--  <i class="fas fa-caret-down"></i>  down arrow
+            <i class="fas fa-caret-up"></i>    up arrow  -->
+        <ol aria-label="마켓 시세 차트">
+          <li>
+            <div>
+              <h4><span>보유한 자산이 없습니다.</span> <em></em></h4>
+              <div>
+                <!--상승시, aria-label에 '전일대비 상승', 하락시, aria-label에 '전일대비 하락' 삽입-->
+                <div aria-label="##"></div>
+                <p><span></span> <em></em></p>
+              </div>
+            </div>
+            <p><span></span> <em></em></p>
+          </li>
+
+          <li>
+            <div>
+              <h4><span></span> <em></em></h4>
+              <div>
+                <div></div>
+                <p><span></span> <em></em></p>
+              </div>
+            </div>
+            <p><span></span> <em></em></p>
+          </li>
+
+          <li>
+            <div>
+              <h4><span></span> <em></em></h4>
+              <div>
+                <div></div>
+                <p><span></span> <em></em></p>
+              </div>
+            </div>
+            <p><span></span> <em></em></p>
+          </li>
+
+          <li>
+            <div>
+              <h4><span></span> <em></em></h4>
+              <div>
+                <div></div>
+                <p><span></span> <em></em></p>
+              </div>
+            </div>
+            <p><span></span> <em></em></p>
+          </li>
+
+          <li>
+            <div>
+              <h4><span></span> <em></em></h4>
+              <div>
+                <div></div>
+                <p><span></span> <em></em></p>
+              </div>
+            </div>
+            <p><span></span> <em></em></p>
+          </li>
+        </ol>
+      </div>
+
+      <!--간편전환-->
+      <div>
+        <h3 class="blind">간편전환</h3>
+        <div>
+          <div>
+            <!--krw전환 메시지-->
+            <h3>
+              <em>별도의 체결신청없이</em>
+              <br />최적의 가격으로 <strong>CKRW</strong>를 <strong>전환</strong> 하세요.
+            </h3>
+            <!--usdt전환 메시지-->
+            <h3>
+              <em>간편전환으로 USDT 투자 상품에 참여 해보세요.</em>
+              <br />USDT 투자 시 최대 <strong>연 4%</strong> 대 이자를 <strong>매일</strong> 지급 합니다.
+            </h3>
+            <a href="#" target="_blank">
+              간편전환 자세히 알아보기
+              <span></span>
+            </a>
+          </div>
+
+          <!-- input box 메시지.
+            1. 잔액 부족할 경우, "보유 수량이 부족합니다." 출력
+            2. 최소 환전금액보다 적게 입력했을경우 "최소금액을 확인하세요." 
+            3. 최대 환전금액보다 높게 입력했을 경우 "최대금액을 확인하세요." 
+            4. 전환 되었을 경우, "간편전환 완료 되었습니다."-->
+          <form action="get" method="#">
+            <div>
+              <div>
+                <p>사용</p>
+                <!--KRW 10,000원 기준 USDT => 8.06993339
+              95.17288986 USDT = 100,000 KRW 
+              10,000CKRW -> 10,000 KRW
+              환율따라 뒤 input value & option & 텍스트 변하게 -->
+                <input type="text" value="10,000" />
+                <label for="fromChange"></label>
+                <select name="fromChange" id="fromChange">
+                  <option value="KRW">KRW</option>
+                  <option value="USDT">USDT</option>
+                  <option value="CKRW">CKRW</option>
+                </select>
+              </div>
+              <!--사용가능 KRW / USDT / CKRW 데이터 필요-->
+              <em>사용가능 : <strong>##</strong> KRW</em>
+            </div>
+            <div>
+              <p>지급</p>
+              <input type="text" value="10,000" disabled />
+              <label for="toChange"></label>
+              <select name="toChange" id="toChange">
+                <option value="CKRW">CKRW</option>
+                <option value="USDT">USDT</option>
+              </select>
+            </div>
+            <div>
+              <button type="submit">간편전환</button>
+              <!--1. KRW, CKRW 클릭시 ->  최소 10,000 / 최대 100,000,000 KRW
+                2. USDT 클릭시      ->  최소 100,000 / 최대 1,000,000 KRW-->
+              <em>최소 <strong>##</strong> / 최대 <strong>##</strong> KRW</em>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- 담보대출 -->
       <ul>
-        <li>KRW 마켓</li>
-        <li>USDT 마켓</li>
-        <li>TRX 마켓</li>
-        <li>CAP 마켓</li>
+        <li class="blind"><h3>담보대출</h3></li>
+        <li>
+          <div>
+            <em class="blind">이전 서비스 보기</em>
+          </div>
+          <div>
+            <em class="blind">다음 서비스 보기</em>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h4><em>코인 홀더들을 위한</em><br />신개념 금융 서비스</h4>
+            <p>
+              <em>TRX</em> 보유만 해도<br />
+              <em>매일 입금받는</em> 즐거움
+            </p>
+            <a href="#">스마트 TRX 바로가기</a>
+          </div>
+          <div>
+            <em class="blind">캐셔레스트 개인 지갑에 TRX 보유만 해도 이자 수익을 보상 받습니다. </em>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <em>코인 홀더들을 위한</em>
+            <h4>신개념 금융 서비스</h4>
+            <p>
+              <em>보유중인 디지털 자산</em>을 투자하여<br />
+              <em>매일 수익</em>을 얻을 수 있다면 ?
+            </p>
+            <a href="#">투자 바로가기</a>
+          </div>
+
+          <div>
+            <p><em>매일매일 이자</em>가 쌓이는 캐셔레스트 <strong>투자 서비스</strong></p>
+            <div>
+              <!-- input box 잠시보류 -->
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <em>코인 홀더들을 위한</em>
+            <h4>신개념 금융 서비스</h4>
+            <p>
+              신용조회 없이 <em>보유중인 디지털 자산</em>으로<br />
+              <em>안전한</em> 담보 대출을 받을 수 있다면?
+            </p>
+            <a href="#">장기대출 바로가기</a>
+          </div>
+
+          <div>
+            <p><em>조건 충족 시,</em> <br />필요 수량 <strong>즉시 입금</strong></p>
+            <em class="blind">디지털 자산을 보유중이라면, 신용 조회 없이 간편 대출</em>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <em>코인 홀더들을 위한</em>
+            <h4>신개념 금융 서비스</h4>
+            <p>
+              신용조회 없이 <em>보유중인 디지털 자산</em>으로<br />
+              <em>고수익</em> 담보 대출을 받을 수 있다면?
+            </p>
+            <a href="#">준비중</a>
+          </div>
+
+          <div>
+            <p><em>보유 대비 최대</em> <br /><strong>4배</strong>까지 승인 가능</p>
+            <em class="blind">디지털 자산을 보유중이라면, 신용 조회 없이 간편 대출</em>
+          </div>
+        </li>
       </ul>
-      <!--마켓 click시 List에 데이터가 전해짐.-->
 
-      <!-- 마켓 / 가격 상승하락 List -->
-      <ol>
-        <li>
-          <div>
-            <h4><span>##</span> <em>##</em></h4>
-            <div>
-              <!--가격 상승하락 박스-->
-              <div></div>
-              <p><span>##</span> <em>##</em></p>
-            </div>
-          </div>
-          <p><span>##</span> <em>##</em></p>
-        </li>
-
-        <li>
-          <div>
-            <h4><span>##</span> <em>##</em></h4>
-            <div>
-              <!--가격 상승하락 박스-->
-              <div></div>
-              <p><span>##</span> <em>##</em></p>
-            </div>
-          </div>
-          <p><span>##</span> <em>##</em></p>
-        </li>
-
-        <li>
-          <div>
-            <h4><span>##</span> <em>##</em></h4>
-            <div>
-              <!--가격 상승하락 박스-->
-              <div></div>
-              <p><span>##</span> <em>##</em></p>
-            </div>
-          </div>
-          <p><span>##</span> <em>##</em></p>
-        </li>
-
-        <li>
-          <div>
-            <h4><span>##</span> <em>##</em></h4>
-            <div>
-              <!--가격 상승하락 박스-->
-              <div></div>
-              <p><span>##</span> <em>##</em></p>
-            </div>
-          </div>
-          <p><span>##</span> <em>##</em></p>
-        </li>
-
-        <li>
-          <div>
-            <h4><span>##</span> <em>##</em></h4>
-            <div>
-              <!--가격 상승하락 박스-->
-              <div></div>
-              <p><span>##</span> <em>##</em></p>
-            </div>
-          </div>
-          <p><span>##</span> <em>##</em></p>
-        </li>
-      </ol>
-    </div>
-
-    <div>
-      <!--krw전환 메시지-->
-      <div>
-        <h3>
-          <em>별도의 체결신청없이</em>
-          <br />최적의 가격으로 <strong>CKRW</strong>를 <strong>전환</strong> 하세요.
-        </h3>
-        <p>
-          간편전환 자세히 알아보기
-          <span></span>
-        </p>
-      </div>
-
-      <!--usdt전환 메시지-->
-      <div>
-        <h3>
-          <em>간편전환으로 USDT 투자 상품에 참여 해보세요.</em>
-          <br />USDT 투자 시 최대 <strong>연 4%</strong> 대 이자를 <strong>매일</strong> 지급 합니다.
-        </h3>
-        <p>
-          간편전환 자세히 알아보기
-          <span></span>
-        </p>
-      </div>
-
-      <form action="get" method="#">
-        <div>
-          <div>
-            <p>사용</p>
-            <input type="text" value="10,000" />
-            <label for="fromChange"></label>
-            <select name="fromChange" id="fromChange">
-              <option value="KRW">KRW</option>
-              <option value="USDT">USDT</option>
-              <option value="CKRW">CKRW</option>
-            </select>
-          </div>
-          <em>사용가능 : <strong>##</strong> KRW</em>
-        </div>
-        <div>
-          <p>지급</p>
-          <input type="text" value="10,000" />
-          <label for="toChange"></label>
-          <select name="toChange" id="toChange">
-            <option value="CKRW">CKRW</option>
-            <option value="USDT">USDT</option>
-          </select>
-        </div>
-        <div>
-          <button type="submit">간편전환</button>
-          <em>최소 <strong>##</strong> / 최대 <strong>##</strong> KRW</em>
-        </div>
-      </form>
-    </div>
-
-    <!-- 담보대출 -->
-    <div>
-      <div>
-        <div>
-          <em>코인 홀더들을 위한</em>
-          <h4>신개념 금융 서비스</h4>
-          <p>
-            <em>TRX</em> 보유만 해도<br />
-            <em>매일 입금받는</em> 즐거움
-          </p>
-          <a href="#">스마트 TRX 바로가기</a>
-          <div>
-            <em class="blind">이전 서비스 보기</em>
-          </div>
-          <div>
-            <em class="blind">다음 서비스 보기</em>
-          </div>
-        </div>
-
-        <div>
-          <em class="blind">캐셔레스트 개인 지갑에 TRX 보유만 해도 이자 수익을 보상 받습니다. </em>
-        </div>
-      </div>
-
-      <div>
-        <div>
-          <em>코인 홀더들을 위한</em>
-          <h4>신개념 금융 서비스</h4>
-          <p>
-            <em>보유중인 디지털 자산</em>을 투자하여<br />
-            <em>매일 수익</em>을 얻을 수 있다면 ?
-          </p>
-          <a href="#">투자 바로가기</a>
-          <div>
-            <em class="blind">이전 서비스 보기</em>
-          </div>
-          <div>
-            <em class="blind">다음 서비스 보기</em>
-          </div>
-        </div>
-
-        <div>
-          <p><em>매일매일 이자</em>가 쌓이는 캐셔레스트 <strong>투자 서비스</strong></p>
-          <div>
-            <!-- input box 잠시보류 -->
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <div>
-          <em>코인 홀더들을 위한</em>
-          <h4>신개념 금융 서비스</h4>
-          <p>
-            신용조회 없이 <em>보유중인 디지털 자산</em>으로<br />
-            <em>안전한</em> 담보 대출을 받을 수 있다면?
-          </p>
-          <a href="#">장기대출 바로가기</a>
-          <div>
-            <em class="blind">이전 서비스 보기</em>
-          </div>
-          <div>
-            <em class="blind">다음 서비스 보기</em>
-          </div>
-        </div>
-
-        <div>
-          <p><em>조건 충족 시,</em> <br />필요 수량 <strong>즉시 입금</strong></p>
-          <em class="blind">디지털 자산을 보유중이라면, 신용 조회 없이 간편 대출</em>
-        </div>
-      </div>
-
-      <div>
-        <div>
-          <em>코인 홀더들을 위한</em>
-          <h4>신개념 금융 서비스</h4>
-          <p>
-            신용조회 없이 <em>보유중인 디지털 자산</em>으로<br />
-            <em>고수익</em> 담보 대출을 받을 수 있다면?
-          </p>
-          <a href="#">준비중</a>
-          <div>
-            <em class="blind">이전 서비스 보기</em>
-          </div>
-          <div>
-            <em class="blind">다음 서비스 보기</em>
-          </div>
-        </div>
-
-        <div>
-          <p><em>보유 대비 최대</em> <br /><strong>4배</strong>까지 승인 가능</p>
-          <em class="blind">디지털 자산을 보유중이라면, 신용 조회 없이 간편 대출</em>
-        </div>
-      </div>
-    </div>
-
-    <!-- 캡페이 다운로드 -->
-    <div>
-      <h4><strong>CAPay</strong> Download</h4>
-      <p>단 두번의 클릭만으로 간편하게 결제할 수 있는 디지털 자산 결제 앱 캡페이를 사용해 보세요.</p>
-
-      <div>
-        <a href="#">
-          <span></span>
-          <span>iOS</span>
-        </a>
-        <a href="#">
-          <span></span>
-          <span>Android</span>
-        </a>
-      </div>
-      <div>
-        <!--image-->>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-
-    <div>
-      <div>
-        <h4>이용안내 및 문의</h4>
-        <p><strong>1644-7931</strong> 평일 10:00 ~ 19:00</p>
-        <p>고객응대는 유선 및 온라인으로만 진행하며, 본사 방문 상담은 진행하지 않습니다.</p>
-      </div>
-
+      <!--캐셔레스트 소개, 기능-->
       <ul>
+        <li class="blind"><h3>캐셔레스트 소개 및 주요 기능</h3></li>
         <li>
           <a href="#">
-            <div></div>
-            <p>공지사항</p>
+            <em aria-label="차트 이미지"></em>
+            <h4>캐셔레스트</h4>
+            <p>캐셔레스트는 디지털 자산 거래 및 결제, P2P 서비스를 제공하는 블록체인 금융 플랫폼 선두 기업입니다.</p>
           </a>
         </li>
-
         <li>
           <a href="#">
-            <div></div>
-            <p>1:1문의</p>
+            <em aria-label="투자 이미지"></em>
+            <h4>투자</h4>
+            <p>거래 및 입출금이 자유로운 투자상품으로 투자자산에 일 단위로 복리계산된 이자가 매일 지급됩니다.</p>
           </a>
         </li>
-
         <li>
           <a href="#">
-            <div></div>
-            <p>회원가입 안내</p>
+            <em aria-label="화폐 이미지"></em>
+            <h4>대출</h4>
+            <p>
+              보유코인을 담보로 스테이블 및 레버리지 대출을 이용할 수 있으며, 신용조회 및 중도상환수수료가 없습니다.
+            </p>
           </a>
         </li>
-
         <li>
           <a href="#">
-            <div></div>
-            <p>인증서 제출</p>
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <div></div>
-            <p>본인인증 방법</p>
+            <em aria-label="카드 결제 이미지"></em>
+            <h4>캡페이</h4>
+            <p>캡페이는 매장이나 쇼핑몰에서 상품이나 서비스를 디지털 자산으로 결제할 수 있는 솔루션입니다.</p>
           </a>
         </li>
       </ul>
-    </div>
 
-    <div>
+      <!-- 캡페이 다운로드 -->
       <div>
-        <em></em>
-        <p>캐셔소식</p>
+        <div>
+          <h4><strong>CAPay</strong> Download</h4>
+          <p>단 두번의 클릭만으로 간편하게 결제할 수 있는 디지털 자산 결제 앱 캡페이를 사용해 보세요.</p>
+
+          <div>
+            <a href="#">
+              <span aria-label="애플 아이콘"></span>
+              <span>iOS</span>
+            </a>
+            <a href="#">
+              <span aria-label="안드로이드 아이콘"></span>
+              <span>Android</span>
+            </a>
+          </div>
+        </div>
+        <figure aria-label="캡페이 이미지">
+          <!--image-->
+          <div></div>
+          <div></div>
+          <div></div>
+        </figure>
       </div>
 
       <div>
-        <em></em>
-        <p>TOP</p>
+        <div>
+          <h4>이용안내 및 문의</h4>
+          <p>
+            <strong>1644-7931</strong> 평일 10:00 ~ 19:00 <br />고객응대는 유선 및 온라인으로만 진행하며, 본사 방문
+            상담은 진행하지 않습니다.
+          </p>
+        </div>
+
+        <ul>
+          <li>
+            <a href="#">
+              <div aria-label="문서 이미지"></div>
+              <p>공지사항</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <div aria-label="질문 말풍선 이미지"></div>
+              <p>1:1문의</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <div aria-label="프로필 이미지"></div>
+              <p>회원가입 안내</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <div aria-label="체크 리스트 이미지"></div>
+              <p>인증서 제출</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <div aria-label="지문 이미지"></div>
+              <p>본인인증 방법</p>
+            </a>
+          </li>
+        </ul>
       </div>
-    </div>
+
+      <!-- aside nav -->
+      <div>
+        <a href="#" target="_blank">
+          <em aria-label="종이비행기"></em>
+          <p>캐셔소식</p>
+          <span class="blind">바로가기</span>
+        </a>
+
+        <a href="#">
+          <em aria-label="위 화살표"></em>
+          <p>TOP</p>
+          <span class="blind">홈페이지 맨 위로 바로가기</span>
+        </a>
+      </div>
+    </section>
 
     <footer>
       <div>
@@ -677,29 +738,30 @@
         </div>
 
         <form>
-          <select name="" id="">
-            <option value=""></option>
-            <option value=""></option>
+          <label for="language"></label>
+          <select name="language" id="language">
+            <option value="KR"></option>
+            <option value="EN"></option>
           </select>
 
           <div>
-            <div></div>
+            <div><em class="blind">ISMS Logo</em></div>
             <p>[인증범위] 캐셔레스트거래소 운영</p>
             <p>[인증기간] 2020.09.16 ~ 2023.09.15</p>
           </div>
         </form>
       </div>
 
-      <div>
+      <address>
         <ul>
           <li>(주)뉴링크</li>
           <li>대표이사 박원준</li>
           <li>서울시 강남구 선릉로 641 우암빌딩</li>
           <li>사업자번호 185-86-00760</li>
           <li>통신판매업신고 제 2017-서울강남-02220호</li>
-          <li>Copyright &copy; 2018 cashierest. ALL rights reserved.</li>
         </ul>
-      </div>
+        <p>Copyright &copy; 2018 cashierest. ALL rights reserved.</p>
+      </address>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
