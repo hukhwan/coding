@@ -1,0 +1,15 @@
+/*merge image*/
+.logoCashierest > a,
+.slideBanner li a {
+  background: url("./image/merge_image/merge_image.png") 100%;
+}
+
+/*small mergo image*/
+.AppLogo2 em,
+.App .market a:first-child > em,
+.App .market a:last-child > em,
+.relativeSite dd a em,
+.sliderIconGrp .beforeIc,
+.sliderIconGrp .afterIc {
+  background: url("./image/merge_image/merge_small_image.png") 100%;
+}

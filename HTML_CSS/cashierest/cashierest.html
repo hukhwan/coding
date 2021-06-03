@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./cssReset.css" />
+    <link rel="stylesheet" href="./backgroundgrp.css" />
     <link rel="stylesheet" href="./cashierest.css" />
     <script src="./cashierest.js" defer></script>
     <script src="https://kit.fontawesome.com/f968a989c6.js" crossorigin="anonymous"></script>
@@ -26,16 +27,16 @@
           <ul class="navigation">
             <li><a href="./href_extra_page/href_extra_page1.html" target="_blank">거래소</a></li>
             <li><a href="./href_extra_page/href_extra_page2.html" target="_blank">간편전환</a></li>
-            <li><a href="./href_extra_page/href_extra_page3.html" target="_blank">투자/대출</a></li>
+            <li class="investLoan">
+              <a href="./href_extra_page/href_extra_page3.html" target="_blank">투자 / 대출</a>
+            </li>
             <li><a href="./href_extra_page/href_extra_page4.html" target="_blank">자산 입출금</a></li>
             <li class="viewMyMoney">
-              <a href="#" class="view">
-                자산조회
-                <ul class="mymoney">
-                  <li><a href="./href_extra_page/href_extra_page5.html" target="_blank">거래내역</a></li>
-                  <li><a href="./href_extra_page/href_extra_page6.html" target="_blank">자산내역</a></li>
-                </ul>
-              </a>
+              <a href="#" class="view"> 자산조회 </a>
+              <ul class="mymoney">
+                <li><a href="./href_extra_page/href_extra_page5.html" target="_blank">거래내역</a></li>
+                <li><a href="./href_extra_page/href_extra_page6.html" target="_blank">자산내역</a></li>
+              </ul>
             </li>
             <li><a href="./href_extra_page/href_extra_page7.html">고객센터</a></li>
           </ul>
@@ -227,64 +228,65 @@
               </div>
             </div>
 
-            <ul>
-              <li>
-                <a href="#">
-                  <span class="blind">신규 디지털 자산 SNS, PAY 종합 블록체인 BNA 상장! 바로가기 클릭</span>
-                </a>
-              </li>
+            <div class="bannerGrp">
+              <div class="sliderDiv">
+                <ul class="slideBanner">
+                  <li class="slideContent slide1">
+                    <a href="#">
+                      <span class="blind">신규 디지털 자산 SNS, PAY 종합 블록체인 BNA 상장! 바로가기 클릭</span>
+                    </a>
+                  </li>
 
-              <li>
-                <a href="#">
-                  <span class="blind">출석체크 이벤트 매일 출석체크하고 333CKRW 받아가세요! 바로가기 클릭</span>
-                </a>
-              </li>
+                  <li class="slideContent slide2">
+                    <a href="#">
+                      <span class="blind">출석체크 이벤트 매일 출석체크하고 333CKRW 받아가세요! 바로가기 클릭</span>
+                    </a>
+                  </li>
 
-              <li>
-                <a href="#">
-                  <span class="blind">2021 HRT 생태계 활성화 프로그램 #1 HRT 상장신청 안내</span>
-                </a>
-              </li>
+                  <li class="slideContent slide3">
+                    <a href="#">
+                      <span class="blind">2021 HRT 생태계 활성화 프로그램 #1 HRT 상장신청 안내</span>
+                    </a>
+                  </li>
 
-              <li>
-                <a href="#">
-                  <span class="blind"
-                    >원화 방문입금 서비스 방문입금시, 거래수수료 할인 혜택 및 코인 즉시출금 지원 바로가기 클릭</span
-                  >
-                </a>
-              </li>
+                  <li class="slideContent slide4">
+                    <a href="#">
+                      <span class="blind"
+                        >원화 방문입금 서비스 방문입금시, 거래수수료 할인 혜택 및 코인 즉시출금 지원 바로가기 클릭</span
+                      >
+                    </a>
+                  </li>
 
-              <li>
-                <a href="#">
-                  <span class="blind">신규 디지털 자산 SNS, PAY 종합 블록체인 BNA 상장! 바로가기 클릭</span>
-                </a>
-              </li>
+                  <li class="slideContent slide5">
+                    <a href="#">
+                      <span class="blind">신규 디지털 자산 SNS, PAY 종합 블록체인 BNA 상장! 바로가기 클릭</span>
+                    </a>
+                  </li>
 
-              <li>
-                <a href="#">
-                  <span class="blind">출석체크 이벤트 매일 출석체크하고 333CKRW 받아가세요! 바로가기 클릭</span>
-                </a>
-              </li>
-            </ul>
+                  <li class="slideContent slide6">
+                    <a href="#">
+                      <span class="blind">출석체크 이벤트 매일 출석체크하고 333CKRW 받아가세요! 바로가기 클릭</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
             <!-- slider 조절바 -->
-            <div>
+            <div class="sliderIconGrp">
               <!-- page slide circle button -->
-              <div><em class="blind">page one</em></div>
-              <div><em class="blind">page two</em></div>
-              <div><em class="blind">page three</em></div>
-              <div><em class="blind">page four</em></div>
-              <div><em class="blind">page five</em></div>
+              <div class="circle p1"><em class="blind">page one</em></div>
+              <div class="circle p2"><em class="blind">page two</em></div>
+              <div class="circle p3"><em class="blind">page three</em></div>
+              <div class="circle p4"><em class="blind">page four</em></div>
+              <div class="circle p5"><em class="blind">page five</em></div>
               <!-- pause button -->
-              <!--  <i class="fas fa-pause"></i>  -->
-              <div>
-                <i class="fas fa-pause blind"></i>
-                <em class="blind">page slide pause</em>
-              </div>
+              <p onclick="slideBannerStop();" class="fas fa-pause pausebtn toggleBtn1"></p>
+              <p onclick="slideBannerStart2();" class="fas fa-play pausebtn toggleBtn2 none"></p>
               <!-- go before page -->
-              <div><em class="blind">go before page</em></div>
+              <div class="beforeIc"><em class="blind">go before page</em></div>
               <!-- go after page -->
-              <div><em class="blind">go after page</em></div>
+              <div class="afterIc"><em class="blind">go after page</em></div>
             </div>
           </div>
         </div>
@@ -294,7 +296,7 @@
       <div>
         <div>
           <div>
-            <h3>공지사항</h3>
+            <h3 class="ass">공지사항</h3>
             <div>
               <div>
                 <span class="blind">before page</span>
