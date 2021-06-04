@@ -79,13 +79,15 @@ time,
 mark,
 audio,
 video {
+  font-style: normal;
+  text-decoration: none;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
-  letter-spacing: normal;
+  letter-spacing: -0.5px;
 }
 /* HTML5 display-role reset for older browsers */
 article,

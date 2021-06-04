@@ -56,32 +56,102 @@ slideBannerStart = setInterval(function () {
   const $slide = $(".sliderDiv .slideBanner");
 
   if ($slide.css("left") != "-1592px") {
-    $slide.css("transition-duration", "0.3s");
+    $slide.css("transition-duration", "1s");
     $slide.css("left", parseFloat($slide.css("left")) - 398 + "px");
   } else {
     $slide.css("transition-duration", "0s");
     $slide.css("left", "0px");
   }
-}, 1000);
+}, 6000);
 
 slideBannerStart2 = function () {
   slideBannerStart = setInterval(function () {
     const $slide = $(".sliderDiv .slideBanner");
 
     if ($slide.css("left") != "-1592px") {
-      $slide.css("transition-duration", "0.3s");
+      $slide.css("transition-duration", "1s");
       $slide.css("left", parseFloat($slide.css("left")) - 398 + "px");
     } else {
       $slide.css("transition-duration", "0s");
       $slide.css("left", "0px");
     }
-  }, 1000);
+  }, 6000);
 };
 
 function slideBannerStop() {
   clearInterval(slideBannerStart);
 }
 
-// $(document).on("click", slideRoof);
+function goPage1() {
+  const $slide = $(".sliderDiv .slideBanner");
+  $slide.css("left", "0px");
+}
+
+function goPage2() {
+  const $slide = $(".sliderDiv .slideBanner");
+  $slide.css("left", "-398px");
+}
+function goPage3() {
+  const $slide = $(".sliderDiv .slideBanner");
+  $slide.css("left", "-796px");
+}
+function goPage4() {
+  const $slide = $(".sliderDiv .slideBanner");
+  $slide.css("left", "-1194px");
+}
+
+function BannerHandingR() {
+  const $slide = $(".sliderDiv .slideBanner");
+  clearInterval(slideBannerStart);
+  if ($slide.css("left") >= "-2000") {
+    $slide.css("transition-duration", "1s");
+    $slide.css("left", parseFloat($slide.css("left")) - 398 + "px");
+  } else {
+    $slide.css("transition-duration", "1s");
+    $slide.css("left", "0px");
+  }
+}
+
+function BannerHandingL() {
+  const $slide = $(".sliderDiv .slideBanner");
+  clearInterval(slideBannerStart);
+  if ($slide.css("left") <= "0") {
+    $slide.css("transition-duration", "1s");
+    $slide.css("left", parseFloat($slide.css("left")) + 398 + "px");
+  } else {
+    $slide.css("transition-duration", "1s");
+    $slide.css("left", "-1592px");
+  }
+}
+
+// $(".afterIc").on("click", BannerHandingR);
 
 // function slideBanner() {}
+
+//슬라이드 전체보기 숨기기
+var slideBnToggle = document.querySelector(".viewBnToggle");
+
+slideBnToggle.addEventListener("click", OpClBn);
+
+function OpClBn() {
+  let parent = this.parentElement;
+  if (!parent.classList.contains("open")) {
+    parent.classList.add("open");
+  } else {
+    parent.classList.remove("open");
+  }
+}
+
+//공지사항 데이터 & 슬라이드
+
+//슬라이드 전체보기 숨기기
+
+//C1. 1~5 리스트 html로 만들어놓고, class는 none으로 설정.
+//C2. if 내부에 데이터가 있으면 class none삭제
+//C3. css $aaa.text=$ 에 contents 넣기.
+
+//C4. 가격이 전일대비 상승이면 이미지 클래스명 바꿔주고, 백그라운드 바꿔주고
+//    몇일대비 상승하락인지 퍼센트 구하기.
+//C5. 마켓 클릭시 .active 클래스가 추가되며 클릭한 마켓 데이터에 따른
+//    Chapter 로직이 실행
+// ** 챕터 3~4로직은 5초에 한번씩 불러오게 설정

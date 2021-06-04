@@ -209,12 +209,8 @@
       <!-- 블록체인 금융플랫폼의 선두 -->
       <div class="mainheader">
         <!-- contents -->
-        <div class="mainhead">
-          <!-- 목록 전체/숨기기 toggle , right bottom -->
-          <div>
-            <em><!-- 전체보기 & 숨기기 --></em>
-          </div>
 
+        <div class="mainhead">
           <div class="mainH2Grp">
             <div class="mainH2">
               <h2>블록체인 금융 플랫폼의 선두</h2>
@@ -268,6 +264,20 @@
                       <span class="blind">출석체크 이벤트 매일 출석체크하고 333CKRW 받아가세요! 바로가기 클릭</span>
                     </a>
                   </li>
+
+                  <li class="slideContent slide3">
+                    <a href="#">
+                      <span class="blind">2021 HRT 생태계 활성화 프로그램 #1 HRT 상장신청 안내</span>
+                    </a>
+                  </li>
+
+                  <li class="slideContent slide4">
+                    <a href="#">
+                      <span class="blind"
+                        >원화 방문입금 서비스 방문입금시, 거래수수료 할인 혜택 및 코인 즉시출금 지원 바로가기 클릭</span
+                      >
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -275,85 +285,66 @@
             <!-- slider 조절바 -->
             <div class="sliderIconGrp">
               <!-- page slide circle button -->
-              <div class="circle p1"><em class="blind">page one</em></div>
-              <div class="circle p2"><em class="blind">page two</em></div>
-              <div class="circle p3"><em class="blind">page three</em></div>
-              <div class="circle p4"><em class="blind">page four</em></div>
-              <div class="circle p5"><em class="blind">page five</em></div>
+              <div onclick="goPage1();" class="circle p1"><em class="blind">page one</em></div>
+              <div onclick="goPage2();" class="circle p2"><em class="blind">page two</em></div>
+              <div onclick="goPage3();" class="circle p3"><em class="blind">page three</em></div>
+              <div onclick="goPage4();" class="circle p4"><em class="blind">page four</em></div>
               <!-- pause button -->
               <p onclick="slideBannerStop();" class="fas fa-pause pausebtn toggleBtn1"></p>
-              <p onclick="slideBannerStart2();" class="fas fa-play pausebtn toggleBtn2 none"></p>
+              <p onclick="slideBannerStart2();" class="fas fa-play pausebtn toggleBtn2"></p>
               <!-- go before page -->
-              <div class="beforeIc"><em class="blind">go before page</em></div>
+              <div onclick="BannerHandingL()" class="beforeIc"><em class="blind">go before page</em></div>
               <!-- go after page -->
-              <div class="afterIc"><em class="blind">go after page</em></div>
+              <div onclick="BannerHandingR();" class="afterIc">
+                <em class="blind">go after page</em>
+              </div>
             </div>
+          </div>
+          <!-- 목록 전체/숨기기 toggle , right bottom -->
+          <div class="viewBnToggle">
+            <em class="text"></em>
           </div>
         </div>
       </div>
 
       <!-- 공지사항 / 뉴스피드 -->
-      <div>
-        <div>
+      <div class="notiNsBg">
+        <div class="notiNs">
           <div>
-            <h3 class="ass">공지사항</h3>
+            <h3><a href="#">공지사항</a></h3>
             <div>
-              <div>
+              <div class="upper">
                 <span class="blind">before page</span>
               </div>
-              <div>
+              <div class="lower">
                 <span class="blind">next page</span>
               </div>
             </div>
 
-            <ul>
-              <!--Chapter1 : 게시판을 만들고 jquery .load을 이용해 nthchild(되나..?) 1,2,3,4,5번째 파일을 불러온다.
-                불러올 내용. (1) nth-child(1) 제목, 날짜
-                Chapter2 : JS로 위로 슬라이드되는 slider 만들기.-->
-              <!--html문서 만들기 XXXXXX jquery에 값 쌍 생성하고 불러오게-->
+            <ul class="notice">
               <li>
                 <a href="#">[신규상장] 파일코인(FIL) KRW 마켓 상장 안내</a>
-                <span>11:28:14</span>
+                <span>2021-06-04</span>
               </li>
-
-              <!-- <li>
-            <a href="#">[공지] 캐셔레스트 KRW 마켓 거래 유의 종목 해제 및 개선사항 점검</a>
-            <span>2021-05-25</span>
-          </li>
-  
-          <li>
-            <a href="#">[공지] ETH(이더리움) 및 ERC20 계열 코인 출금 정상화 안내</a>
-            <span>2021-05-18</span>
-          </li>
-  
-          <li>
-            <a href="#">[이벤트] (수정)캐셔레스트 회원가입 및 출석체크 이벤트</a>
-            <span>2021-02-26</span>
-          </li>
-  
-          <li>
-            <a href="#">[공지] BCH(비트코인 캐시) 입출금 재개 안내</a>
-            <span>2021-05-18</span>
-          </li> -->
             </ul>
           </div>
 
           <div>
-            <h3>뉴스피드</h3>
+            <h3><a href="#">뉴스피드</a></h3>
             <div>
-              <div>
+              <div class="upper">
                 <span class="blind">before page</span>
               </div>
-              <div>
+              <div class="lower">
                 <span class="blind">next page</span>
               </div>
             </div>
 
             <!--만약 다른 웹페이지에서 기사 가져올수 있다면 만들어 보는것도.. +@ -->
-            <ul>
+            <ul class="newSpeed">
               <li>
-                <a href="#">中 채굴 관련 업체, 중국 IP 접속 차단 및 상품 판매 중단</a>
-                <span>2021-05-26</span>
+                <a href="#">그레이스케일 신탁 자산, LTC 34.98개 증가</a>
+                <span>2021-06-03</span>
               </li>
             </ul>
           </div>
@@ -361,13 +352,13 @@
       </div>
 
       <!-- 마켓 List -->
-      <div>
+      <div class="coinMarket">
         <h3 class="blind">마켓 리스트</h3>
         <ul>
-          <li>KRW 마켓</li>
-          <li>USDT 마켓</li>
-          <li>TRX 마켓</li>
-          <li>CAP 마켓</li>
+          <li class="active"><span>KRW 마켓</span></li>
+          <li><span>USDT 마켓</span></li>
+          <li><span>TRX 마켓</span></li>
+          <li><span>CAP 마켓</span></li>
         </ul>
         <!--마켓 click시 List에 데이터가 전해짐.-->
 
@@ -376,15 +367,15 @@
             <i class="fas fa-caret-up"></i>    up arrow  -->
         <ol aria-label="마켓 시세 차트">
           <li>
-            <div>
-              <h4><span>보유한 자산이 없습니다.</span> <em></em></h4>
-              <div>
+            <div class="coinH4">
+              <h4><span>ETH</span> <em>/KRW</em></h4>
+              <div class="undownBox">
                 <!--상승시, aria-label에 '전일대비 상승', 하락시, aria-label에 '전일대비 하락' 삽입-->
-                <div aria-label="##"></div>
-                <p><span></span> <em></em></p>
+                <div class="fas fa-caret-down" aria-label="##"></div>
+                <p><span>4.43</span> <em>%</em></p>
               </div>
             </div>
-            <p><span></span> <em></em></p>
+            <p><span>3,142,500</span> <em>KRW</em></p>
           </li>
 
           <li>
