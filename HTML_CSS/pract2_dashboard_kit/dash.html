@@ -17,36 +17,52 @@
 
       <ul class="navList">
         <li class="activeList">
-          <a href="#"><img src="./source/dashone.svg" /></a>
-          <p>Overview</p>
+          <a href="#"
+            ><img src="./source/dashone.svg" />
+            <p>Overview</p>
+          </a>
         </li>
         <li>
-          <a href="./dashtaskpage.html"><img src="./source/dashtwo.svg" /></a>
-          <p>Tickets</p>
+          <a href="#"
+            ><img src="./source/dashtwo.svg" />
+            <p>Tickets</p>
+          </a>
         </li>
         <li>
-          <a href="./dashtaskpage.html"><img src="./source/dashthree.svg" /></a>
-          <p>Tasks</p>
+          <a href="./dashtaskpage.html" class="taskLink"
+            ><img src="./source/dashthree.svg" />
+            <p>Tasks</p>
+          </a>
         </li>
         <li>
-          <img src="./source/dashfour.svg" />
-          <p>Contacts</p>
+          <a href="#"
+            ><img src="./source/dashfour.svg" />
+            <p>Contacts</p>
+          </a>
         </li>
         <li>
-          <img src="./source/dashfive.svg" />
-          <p>Agents</p>
+          <a href="#"
+            ><img src="./source/dashfive.svg" />
+            <p>Agents</p>
+          </a>
         </li>
         <li class="navListEnd">
-          <img src="./source/dashsix.svg" />
-          <p>Article</p>
+          <a href="#"
+            ><img src="./source/dashsix.svg" />
+            <p>Article</p>
+          </a>
         </li>
         <li class="navSetting">
-          <img src="./source/dashseven.svg" />
-          <p>Settings</p>
+          <a href="#"
+            ><img src="./source/dashseven.svg" />
+            <p>Settings</p>
+          </a>
         </li>
         <li>
-          <img src="./source/dasheight.svg" />
-          <p>Subscription</p>
+          <a href="#"
+            ><img src="./source/dasheight.svg" />
+            <p>Subscription</p>
+          </a>
         </li>
       </ul>
     </nav>
@@ -190,28 +206,28 @@
                 <li>
                   <label for="work"></label>
                   <input type="text" id="work" name="work" placeholder="Create new task" />
-                  <input class="buttonImg" type="image" name="submit" src="./source/plus.svg" />
+                  <button class="buttonImg" type="submit" name="submit"><img src="./source/plus.svg" alt="" /></button>
                 </li>
 
                 <li>
                   <label for="taskone"></label>
-                  <input type="checkbox" id="taskone" />
+                  <input type="checkbox" id="taskone" checked />
                   <p>Finish ticket update</p>
-                  <p class="upanddown">URGENT</p>
+                  <p class="upanddown yellow"></p>
                 </li>
 
                 <li>
                   <label for="tasktwo"></label>
                   <input type="checkbox" id="tasktwo" />
                   <p>Create new ticket example</p>
-                  <p class="upanddown">NEW</p>
+                  <p class="upanddown green"></p>
                 </li>
 
                 <li>
                   <label for="taskthree"></label>
                   <input type="checkbox" id="taskthree" />
                   <p>Update ticket report</p>
-                  <p class="upanddown">DEFAULT</p>
+                  <p class="upanddown gray"></p>
                 </li>
               </ol>
             </form>
@@ -219,5 +235,6 @@
         </div>
       </section>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </body>
 </html>

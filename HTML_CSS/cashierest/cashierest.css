@@ -56,6 +56,10 @@
 .navigation > li:first-child {
   margin-left: 0;
 }
+.navigation > li:first-child > a {
+  font-weight: 900;
+  color: #046fd9;
+}
 
 .navigation li a {
   font-weight: 500;
@@ -122,6 +126,11 @@ nav .logIn > li > a {
   font-size: 14px;
   font-weight: 400;
   margin-left: 21px;
+}
+
+nav .logIn > li:first-child > a:first-child {
+  font-weight: 900;
+  color: rgb(189, 38, 38);
 }
 
 nav .logIn > li > a:hover {

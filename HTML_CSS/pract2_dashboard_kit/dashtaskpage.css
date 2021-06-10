@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-direction: row;
   letter-spacing: 0.4px;
+  background-color: #f5f9ff;
 }
 
 button {
@@ -18,6 +19,10 @@ button {
   border-color: none;
   background-color: none;
   display: block;
+}
+
+li {
+  list-style: none;
 }
 
 a {
@@ -57,7 +62,7 @@ h3 {
   padding-right: 43px;
 }
 
-li,
+li > div,
 .navhead {
   display: flex;
   flex-direction: row;
@@ -73,10 +78,6 @@ li,
   width: 25px;
 }
 
-.taskLink img {
-  height: 25.68px;
-}
-
 .navList {
   padding: 0;
 }
@@ -87,6 +88,10 @@ li,
 
 .navList li {
   padding: 20.47px 0 20.47px 32px;
+}
+
+.taskLink img {
+  height: 25.68px;
 }
 
 .activeList {
@@ -146,6 +151,9 @@ li,
 .ref {
   text-align: right;
   font-size: 12px;
+}
+
+dl > div {
 }
 
 .databox {
@@ -326,19 +334,21 @@ li,
   color: #8e8f97;
 }
 
+#deadLine {
+  border: black solid 0px;
+  font-size: 14px;
+  color: #8e8f97;
+}
+
 .buttonImg {
-  position: absolute;
-  right: 30px;
   width: 25px;
   opacity: 30%;
 }
 
 .upanddown {
-  padding: 8px 15px 5px 5px;
+  padding: 8px 15px;
   border-radius: 18px;
   color: white;
-  position: absolute;
-  right: 30px;
   font-size: 11px;
   line-height: 13.81px;
   letter-spacing: 0.5px;
@@ -371,4 +381,230 @@ li,
 }
 .red::before {
   content: "HIGH";
+}
+
+.clear {
+  background-color: rgb(0, 140, 255);
+}
+.clear::before {
+  content: "CLEAR";
+}
+
+/*task section*/
+.taskSection {
+  margin: 30px 33px 30px;
+}
+
+li,
+ol {
+  padding: 0;
+}
+
+.subexplain {
+  width: 1122px;
+  height: 942px;
+  margin-top: 58px;
+  background-color: white;
+  border: #dfe0eb solid 1px;
+  border-radius: 8px;
+  padding: 50px;
+  overflow: scroll;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.subexplain h2 {
+  font-size: 19px;
+  letter-spacing: 0.4px;
+  line-height: 23.85px;
+  color: #252733;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.flexRo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subexplain .taskhead p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #4b506d;
+  font-weight: 600;
+  margin-right: 34px;
+}
+
+.subexplain .taskhead i {
+  margin-right: 9px;
+  color: #c5c7cd;
+}
+
+.subexp .createTask {
+  margin: auto;
+  width: max-content;
+  padding: 10px 30px 10px 14px;
+  cursor: pointer;
+}
+
+.subexp .createTask img {
+  width: 30px;
+}
+.subexp .createTask img:hover {
+  opacity: 80%;
+}
+
+.subexp li {
+  border-bottom: #dcdce0 solid 1px;
+  z-index: 1;
+}
+
+.subexp li p {
+  font-weight: 700;
+}
+
+.subexp li input[type="checkbox"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #bcbcbc;
+  cursor: pointer;
+}
+
+.subexp li .todo:hover {
+  background-color: hsl(161, 100%, 96%);
+}
+.subexp li:first-child:hover {
+  background-color: white;
+}
+
+.subexp li > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subexp li > div > div {
+  display: flex;
+  align-items: center;
+}
+
+.subexp .todoList em {
+  display: block;
+  margin: 0 30px 10px;
+  font-weight: 500;
+  font-style: normal;
+  color: #525775;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 250ms ease-in-out;
+  margin-top: 20px;
+}
+
+.subexplain .subexp .open em {
+  max-height: 0px;
+}
+
+.subexp li i {
+  position: relative;
+  display: block;
+  margin: 0 20px;
+  color: #666b88;
+  font-size: 20px;
+}
+.subexp li i:hover {
+  color: #15458d;
+}
+
+.hideText {
+  display: none;
+}
+
+.subexp .pop {
+  position: absolute;
+  top: 25px;
+  z-index: 3;
+  left: -15px;
+  font-size: 15px;
+  color: #868aa0;
+  background-color: #eeeeee;
+  border: #e2e2e2 solid 2px;
+  padding: 16px;
+  padding-left: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.subexp .pop p:hover {
+  color: black;
+}
+
+.subexp .pop p:first-child {
+  margin-bottom: 20px;
+}
+
+.createTask {
+  position: relative;
+  text-align: center;
+}
+
+.createTask .makeNotice {
+  padding: 20px;
+}
+
+.createTask .makeNotice input {
+  margin-bottom: 20px;
+  font-size: 10px;
+  text-align: center;
+}
+
+h4 {
+  padding: 5px 0;
+  background-color: #e6f0ff;
+  margin: 15px;
+}
+
+.difficulty {
+  margin-bottom: 30px;
+}
+
+.difficulty strong {
+  margin: 5px;
+}
+
+.difficulty strong:hover {
+  filter: brightness(0.8);
+}
+
+.makeNotice button {
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background-color: #3f99ff;
+  border: #1f7fee solid 1px;
+  color: white;
+}
+
+.makeNotice button:hover {
+  color: #31323a;
+  background-color: #ffffff;
+  border: #3f99ff solid 1px;
+}
+
+.createTask .maker {
+  display: block;
+  text-align: center;
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 250ms ease-in-out;
+}
+
+.open .maker {
+  box-shadow: #c5c5c5 0 5px 20px;
+  border: #e0e0e0 solid 1px;
 }
