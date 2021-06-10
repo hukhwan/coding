@@ -83,47 +83,52 @@
       </div>
 
       <div class="subexplain">
-        <form action="" method="">
-          <div class="taskhead flexRo">
-            <h2>All Tasks</h2>
-            <div class="flexRo">
-              <p><i class="fas fa-sort-amount-up"></i> Sort</p>
-              <p><i class="fas fa-filter"></i> Filter</p>
-            </div>
+        <div class="taskhead flexRo">
+          <h2>All Tasks</h2>
+          <div class="flexRo">
+            <p><i class="fas fa-sort-amount-up"></i> Sort</p>
+            <p><i class="fas fa-filter"></i> Filter</p>
           </div>
+        </div>
 
-          <div class="createTask">
-            <img src="./source/plus.svg" alt="" class="trigger" />
+        <form class="createTask" action="" method="">
+          <img src="./source/plus.svg" alt="" class="trigger" />
 
-            <div class="maker">
-              <div class="makeNotice">
-                <h4>Create new task</h4>
-                <label for="work"></label>
-                <input type="text" id="work" name="work" placeholder="Please enter a title" />
-                <h4>Choose difficulty</h4>
-                <div class="difficulty">
-                  <strong class="upanddown gray"></strong>
-                  <input type="hidden" id="dif_default" name="dif_default" />
+          <div class="maker">
+            <div class="makeNotice">
+              <h4>Create new task</h4>
 
-                  <strong class="upanddown yellow"></strong>
-                  <input type="hidden" id="dif_low" name="dif_low" />
+              <label for="work"></label>
+              <input type="text" id="work" name="work" placeholder="Please enter a title" />
 
-                  <strong class="upanddown green"></strong>
-                  <input type="hidden" id="dif_normal" name="dif_normal" />
+              <h4>Choose difficulty</h4>
+              <div class="difficulty">
+                <strong class="upanddown gray"></strong>
+                <input type="hidden" id="dif_default" name="dif_default" value="" />
 
-                  <strong class="upanddown red"></strong>
-                  <input type="hidden" id="dif_high" name="dif_high" />
+                <strong class="upanddown yellow"></strong>
+                <input type="hidden" id="dif_low" name="dif_low" value="" />
 
-                  <strong class="upanddown clear"></strong>
-                  <input type="hidden" id="dif_clear" name="dif_clear" />
-                </div>
-                <h4>Dead Line</h4>
-                <label for="deadLine"></label>
-                <input type="date" id="deadLine" name="deadLine" value="2021-06-10" />
-                <button type="submit">Submit</button>
+                <strong class="upanddown green"></strong>
+                <input type="hidden" id="dif_normal" name="dif_normal" value="" />
+
+                <strong class="upanddown red"></strong>
+                <input type="hidden" id="dif_high" name="dif_high" value="" />
+
+                <strong class="upanddown clear"></strong>
+                <input type="hidden" id="dif_clear" name="dif_clear" value="" />
               </div>
+              <h4>Dead Line</h4>
+
+              <label for="deadLine"></label>
+              <input type="date" id="deadLine" name="deadLine" value="2021-06-10" />
+
+              <button type="submit">Submit</button>
             </div>
           </div>
+        </form>
+
+        <form action="" method="">
           <ol class="subexp">
             <li class="todoList">
               <div class="todo">
@@ -132,14 +137,16 @@
                   <input type="checkbox" id="task1" name="task1" />
                   <p>Car wash on 20:00</p>
                 </div>
+                <i class="opnPop fas fa-chevron-down"></i>
+                <!-- fas fa-chevron-down -->
                 <div>
                   <strong class="upanddown yellow"></strong>
-                  <i class="fas fa-ellipsis-v">
-                    <div class="pop">
-                      <p>Modify</p>
-                      <p>Delete</p>
-                    </div>
-                  </i>
+                  <!-- fas fa-chevron-up -->
+                  <i class="fas fa-ellipsis-v"> </i>
+                  <div class="pop">
+                    <p>Modify</p>
+                    <p>Delete</p>
+                  </div>
                 </div>
               </div>
               <em
@@ -157,14 +164,14 @@
                   <input type="checkbox" id="task2" name="task2" />
                   <p>Study Java</p>
                 </div>
+                <i class="opnPop fas fa-chevron-down"></i>
                 <div>
                   <strong class="upanddown green"></strong>
-                  <i class="fas fa-ellipsis-v">
-                    <div class="pop">
-                      <p>Modify</p>
-                      <p>Delete</p>
-                    </div>
-                  </i>
+                  <i class="fas fa-ellipsis-v"> </i>
+                  <div class="pop">
+                    <p>Modify</p>
+                    <p>Delete</p>
+                  </div>
                 </div>
               </div>
               <em
@@ -183,14 +190,14 @@
                   <input type="checkbox" id="task3" name="task3" checked />
                   <p>Update ticket report</p>
                 </div>
+                <i class="opnPop fas fa-chevron-down"> </i>
                 <div>
                   <strong class="upanddown gray"></strong>
-                  <i class="fas fa-ellipsis-v">
-                    <div class="pop">
-                      <p>Modify</p>
-                      <p>Delete</p>
-                    </div>
-                  </i>
+                  <i class="fas fa-ellipsis-v"> </i>
+                  <div class="pop">
+                    <p>Modify</p>
+                    <p>Delete</p>
+                  </div>
                 </div>
               </div>
               <em

@@ -62,7 +62,7 @@ slideBannerStart = setInterval(function () {
     $slide.css("transition-duration", "0s");
     $slide.css("left", "0px");
   }
-}, 6000);
+}, 2000);
 
 slideBannerStart2 = function () {
   slideBannerStart = setInterval(function () {
@@ -75,7 +75,7 @@ slideBannerStart2 = function () {
       $slide.css("transition-duration", "0s");
       $slide.css("left", "0px");
     }
-  }, 6000);
+  }, 2000);
 };
 
 function slideBannerStop() {

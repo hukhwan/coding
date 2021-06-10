@@ -472,11 +472,8 @@ ol {
   cursor: pointer;
 }
 
-.subexp li .todo:hover {
+.subexp li:hover {
   background-color: hsl(161, 100%, 96%);
-}
-.subexp li:first-child:hover {
-  background-color: white;
 }
 
 .subexp li > div {
@@ -501,6 +498,21 @@ ol {
   margin-top: 20px;
 }
 
+.todo > div:first-child {
+  min-width: 30%;
+}
+
+.todo > div:last-child {
+  justify-content: flex-end;
+  min-width: 13%;
+}
+
+.subexp .todoList .todo > i {
+  display: block;
+  padding: 10px 0 10px 158px;
+  width: 50%;
+}
+
 .subexplain .subexp .open em {
   max-height: 0px;
 }
@@ -508,7 +520,7 @@ ol {
 .subexp li i {
   position: relative;
   display: block;
-  margin: 0 20px;
+  padding: 5px 20px;
   color: #666b88;
   font-size: 20px;
 }
@@ -522,17 +534,29 @@ ol {
 
 .subexp .pop {
   position: absolute;
-  top: 25px;
+  max-height: 0px;
+  width: max-content;
+  top: 50px;
   z-index: 3;
-  left: -15px;
-  font-size: 15px;
+  right: -40px;
   color: #868aa0;
+}
+
+.pop p {
+  font-size: 0;
+}
+
+.oopen .pop {
   background-color: #eeeeee;
   border: #e2e2e2 solid 2px;
   padding: 16px;
   padding-left: 0;
   border-radius: 5px;
   cursor: pointer;
+}
+.oopen .pop p {
+  font-size: 15px;
+  padding-bottom: 16px;
 }
 
 .subexp .pop p:hover {
@@ -604,7 +628,7 @@ h4 {
   transition: max-height 250ms ease-in-out;
 }
 
-.open .maker {
+.pen .maker {
   box-shadow: #c5c5c5 0 5px 20px;
   border: #e0e0e0 solid 1px;
 }
