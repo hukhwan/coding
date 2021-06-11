@@ -50,3 +50,44 @@ function oopenAccordion() {
     article.style.maxHeight = "0px";
   }
 }
+
+//label을 클릭시 해당input의 value = label classname
+
+var createBtn1 = document.querySelector(".difficulty #dif_default");
+createBtn1.addEventListener("click", updateBtn);
+
+var createBtn2 = document.querySelector(".difficulty #dif_low");
+createBtn2.addEventListener("click", updateBtn);
+
+var createBtn3 = document.querySelector(".difficulty #dif_normal");
+createBtn3.addEventListener("click", updateBtn);
+
+var createBtn4 = document.querySelector(".difficulty #dif_high");
+createBtn4.addEventListener("click", updateBtn);
+
+var createBtn5 = document.querySelector(".difficulty #dif_clear");
+createBtn5.addEventListener("click", updateBtn);
+
+function updateBtn() {
+  if (this.getAttribute("name") == "false") {
+    a();
+    this.setAttribute("name", "true");
+    this.style.border = "gray solid 3px";
+  } else {
+    this.setAttribute("name", "false");
+    this.style.border = "white solid 3px";
+  }
+}
+
+function a() {
+  createBtn1.setAttribute("name", "false");
+  createBtn1.style.border = "white solid 3px";
+  createBtn2.setAttribute("name", "false");
+  createBtn2.style.border = "white solid 3px";
+  createBtn3.setAttribute("name", "false");
+  createBtn3.style.border = "white solid 3px";
+  createBtn4.setAttribute("name", "false");
+  createBtn4.style.border = "white solid 3px";
+  createBtn5.setAttribute("name", "false");
+  createBtn5.style.border = "white solid 3px";
+}

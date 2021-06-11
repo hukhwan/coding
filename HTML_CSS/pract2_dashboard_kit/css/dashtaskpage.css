@@ -346,6 +346,8 @@ dl > div {
 }
 
 .upanddown {
+  outline: none;
+  border: white;
   padding: 8px 15px;
   border-radius: 18px;
   color: white;
@@ -355,6 +357,7 @@ dl > div {
 }
 
 .yellow {
+  border: white solid 3px;
   background-color: rgb(255, 205, 42);
 }
 .yellow::before {
@@ -362,6 +365,7 @@ dl > div {
 }
 
 .green {
+  border: white solid 3px;
   background-color: #29cc97;
 }
 .green::before {
@@ -369,6 +373,7 @@ dl > div {
 }
 
 .gray {
+  border: white solid 3px;
   background-color: #f0f1f7;
   color: #9fa2b4;
 }
@@ -377,6 +382,7 @@ dl > div {
 }
 
 .red {
+  border: white solid 3px;
   background-color: #f12b2c;
 }
 .red::before {
@@ -384,6 +390,7 @@ dl > div {
 }
 
 .clear {
+  border: white solid 3px;
   background-color: rgb(0, 140, 255);
 }
 .clear::before {
@@ -525,7 +532,7 @@ ol {
   font-size: 20px;
 }
 .subexp li i:hover {
-  color: #15458d;
+  color: #26a8ff;
 }
 
 .hideText {
@@ -583,9 +590,16 @@ ol {
 }
 
 h4 {
+  width: 500px;
   padding: 5px 0;
   background-color: #e6f0ff;
   margin: 15px;
+}
+#explain1 {
+  border-color: white;
+  outline: none;
+  background-color: #f7faff;
+  padding: 20px;
 }
 
 .difficulty {

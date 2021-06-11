@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./dashtaskpage.css" />
+    <link rel="stylesheet" href="./css/dashtaskpage.css" />
     <script src="https://kit.fontawesome.com/f968a989c6.js" crossorigin="anonymous"></script>
-    <script src="./script.js" defer></script>
+    <script src="./script/script.js" defer></script>
     <title>Dashboard-task</title>
   </head>
   <body>
     <nav class="sideList">
-      <div class="navhead">
+      <a class="navhead" href="./dash.html">
         <img src="./source/home-solid.svg" />
         <h3>Dashboard Kit</h3>
-      </div>
+      </a>
 
       <ul class="navList">
         <li>
-          <a href="#"
+          <a href="./dash.html"
             ><img src="./source/dashone.svg" />
             <p>Overview</p>
           </a>
@@ -97,33 +97,31 @@
           <div class="maker">
             <div class="makeNotice">
               <h4>Create new task</h4>
-
               <label for="work"></label>
               <input type="text" id="work" name="work" placeholder="Please enter a title" />
 
+              <h4>Explain</h4>
+              <label for="explain1"></label>
+              <textarea type="text" id="explain1" name="explain1" rows="5" cols="58"></textarea>
+
               <h4>Choose difficulty</h4>
               <div class="difficulty">
-                <strong class="upanddown gray"></strong>
-                <input type="hidden" id="dif_default" name="dif_default" value="" />
+                <input type="button" id="dif_default" name="false" class="upanddown gray" value="DEFAULT" />
 
-                <strong class="upanddown yellow"></strong>
-                <input type="hidden" id="dif_low" name="dif_low" value="" />
+                <input type="button" id="dif_low" name="false" class="upanddown yellow" value="LOW" />
 
-                <strong class="upanddown green"></strong>
-                <input type="hidden" id="dif_normal" name="dif_normal" value="" />
+                <input type="button" id="dif_normal" name="false" class="upanddown green" value="NORMAL" />
 
-                <strong class="upanddown red"></strong>
-                <input type="hidden" id="dif_high" name="dif_high" value="" />
+                <input type="button" id="dif_high" name="false" class="upanddown red" value="HIGH" />
 
-                <strong class="upanddown clear"></strong>
-                <input type="hidden" id="dif_clear" name="dif_clear" value="" />
+                <input type="button" id="dif_clear" name="false" class="upanddown clear" value="CLEAR" />
               </div>
               <h4>Dead Line</h4>
 
               <label for="deadLine"></label>
               <input type="date" id="deadLine" name="deadLine" value="2021-06-10" />
 
-              <button type="submit">Submit</button>
+              <button type="submit">Create New Task</button>
             </div>
           </div>
         </form>
