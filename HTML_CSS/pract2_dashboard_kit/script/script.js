@@ -54,7 +54,7 @@ function oopenAccordion() {
 //label을 클릭시 해당input의 value = label classname
 
 var createBtn1 = document.querySelector(".difficulty #dif_default");
-createBtn1.addEventListener("click", updateBtn);
+createBtn1.addEventListener("click", updateBtn1only);
 
 var createBtn2 = document.querySelector(".difficulty #dif_low");
 createBtn2.addEventListener("click", updateBtn);
@@ -69,25 +69,36 @@ var createBtn5 = document.querySelector(".difficulty #dif_clear");
 createBtn5.addEventListener("click", updateBtn);
 
 function updateBtn() {
-  if (this.getAttribute("name") == "false") {
+  if (this.getAttribute("name") == "") {
     a();
-    this.setAttribute("name", "true");
+    this.setAttribute("name", "dashDifficulty");
     this.style.border = "gray solid 3px";
   } else {
-    this.setAttribute("name", "false");
+    this.setAttribute("name", "");
     this.style.border = "white solid 3px";
   }
 }
 
+function updateBtn1only() {
+  if (this.getAttribute("name") == "") {
+    a();
+    this.setAttribute("name", "dashDifficulty");
+    this.style.border = "gray solid 3px";
+  } else {
+    this.setAttribute("name", "");
+    this.style.border = "#c7c7c7 solid 3px";
+  }
+}
+
 function a() {
-  createBtn1.setAttribute("name", "false");
-  createBtn1.style.border = "white solid 3px";
-  createBtn2.setAttribute("name", "false");
+  createBtn1.setAttribute("name", "");
+  createBtn1.style.border = "#c7c7c7 solid 3px";
+  createBtn2.setAttribute("name", "");
   createBtn2.style.border = "white solid 3px";
-  createBtn3.setAttribute("name", "false");
+  createBtn3.setAttribute("name", "");
   createBtn3.style.border = "white solid 3px";
-  createBtn4.setAttribute("name", "false");
+  createBtn4.setAttribute("name", "");
   createBtn4.style.border = "white solid 3px";
-  createBtn5.setAttribute("name", "false");
+  createBtn5.setAttribute("name", "");
   createBtn5.style.border = "white solid 3px";
 }
